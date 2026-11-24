@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1131" viewBox="0 0 1600 1131">
+<rect x="0" y="0" width="1600" height="1131" fill="#ffffff"/>
+<rect x="14" y="14" width="1572" height="1103" fill="none" stroke="#1b1b1b" stroke-width="1.2"/>
+<rect x="1126" y="917" width="460" height="200" fill="#ffffff" stroke="#1b1b1b" stroke-width="1.2"/>
+<line x1="1126" y1="969" x2="1586" y2="969" stroke="#6f6f6f" stroke-width="0.6"/>
+<line x1="1126" y1="1021" x2="1586" y2="1021" stroke="#6f6f6f" stroke-width="0.6"/>
+<line x1="1126" y1="1073" x2="1586" y2="1073" stroke="#6f6f6f" stroke-width="0.6"/>
+<line x1="1426" y1="1021" x2="1426" y2="1117" stroke="#6f6f6f" stroke-width="0.6"/>
+<text x="1140.0" y="939.0" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#2a2a2a" text-anchor="start" letter-spacing="0.6">DALSTIGEN 17, RESARÖ – TILLBYGGNAD</text>
+<text x="1140.0" y="959.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#6f6f6f" text-anchor="start">Fastighet Överby 6:21, Vaxholms kommun</text>
+<text x="1140.0" y="991.0" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" fill="#2a2a2a" text-anchor="start">Sektion A–A och fasad mot väster</text>
+<text x="1140.0" y="1010.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#6f6f6f" text-anchor="start">Alternativ 2 – 5,5 m mellan husen</text>
+<text x="1140.0" y="1043.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#8a3b1e" text-anchor="start">SKISSFÖRSLAG – EJ BYGGLOVSHANDLING</text>
+<text x="1140.0" y="1061.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#6f6f6f" text-anchor="start">Alla mått är skissmått i meter</text>
+<text x="1440.0" y="1043.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="start">Datum 2026-11-24</text>
+<text x="1440.0" y="1061.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="start">Blad 2 / 2</text>
+<text x="1140.0" y="1095.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#6f6f6f" text-anchor="start">Sektionen går genom altandörrarnas läge, sett mot öster</text>
+<text x="1440.0" y="1095.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#6f6f6f" text-anchor="start">Skala enl. skalstock</text>
+<polygon points="50.0,425.8 60.0,424.7 70.0,423.8 80.0,423.1 90.0,422.6 100.0,422.2 110.0,422.0 120.0,422.0 130.0,422.0 140.0,422.0 150.0,422.0 160.0,422.0 170.0,422.0 180.0,429.6 190.0,429.6 200.0,429.6 210.0,429.6 220.0,429.6 230.0,429.6 240.0,429.6 250.0,429.6 260.0,429.6 270.0,429.6 280.0,429.6 290.0,429.6 300.0,429.6 310.0,429.6 320.0,429.6 330.0,429.6 340.0,429.6 350.0,429.6 360.0,429.6 370.0,429.6 380.0,429.6 390.0,429.6 400.0,429.6 410.0,429.6 420.0,429.6 430.0,429.6 440.0,429.6 450.0,429.6 460.0,429.6 470.0,429.6 480.0,429.6 490.0,429.6 500.0,429.6 510.0,429.6 520.0,429.6 530.0,429.6 540.0,429.6 550.0,429.6 560.0,429.6 570.0,429.6 580.0,429.6 590.0,429.6 600.0,429.6 610.0,429.6 620.0,429.6 630.0,429.6 640.0,429.6 650.0,429.6 660.0,429.6 670.0,429.6 680.0,429.6 690.0,429.6 700.0,429.6 710.0,429.6 720.0,429.6 730.0,429.6 740.0,429.6 750.0,429.6 760.0,429.6 770.0,429.6 780.0,429.6 790.0,429.6 800.0,429.6 810.0,429.6 820.0,429.6 830.0,429.6 840.0,429.6 850.0,429.6 860.0,429.6 870.0,429.6 880.0,429.6 890.0,422.0 900.0,422.0 910.0,422.0 920.0,422.0 930.0,422.0 940.0,421.9 950.0,421.8 960.0,421.7 970.0,421.5 970.0,472.0 50.0,472.0" fill="#efebe3" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polyline points="50.0,425.8 60.0,424.7 70.0,423.8 80.0,423.1 90.0,422.6 100.0,422.2 110.0,422.0 120.0,422.0 130.0,422.0 140.0,422.0 150.0,422.0 160.0,422.0 170.0,422.0 180.0,429.6 190.0,429.6 200.0,429.6 210.0,429.6 220.0,429.6 230.0,429.6 240.0,429.6 250.0,429.6 260.0,429.6 270.0,429.6 280.0,429.6 290.0,429.6 300.0,429.6 310.0,429.6 320.0,429.6 330.0,429.6 340.0,429.6 350.0,429.6 360.0,429.6 370.0,429.6 380.0,429.6 390.0,429.6 400.0,429.6 410.0,429.6 420.0,429.6 430.0,429.6 440.0,429.6 450.0,429.6 460.0,429.6 470.0,429.6 480.0,429.6 490.0,429.6 500.0,429.6 510.0,429.6 520.0,429.6 530.0,429.6 540.0,429.6 550.0,429.6 560.0,429.6 570.0,429.6 580.0,429.6 590.0,429.6 600.0,429.6 610.0,429.6 620.0,429.6 630.0,429.6 640.0,429.6 650.0,429.6 660.0,429.6 670.0,429.6 680.0,429.6 690.0,429.6 700.0,429.6 710.0,429.6 720.0,429.6 730.0,429.6 740.0,429.6 750.0,429.6 760.0,429.6 770.0,429.6 780.0,429.6 790.0,429.6 800.0,429.6 810.0,429.6 820.0,429.6 830.0,429.6 840.0,429.6 850.0,429.6 860.0,429.6 870.0,429.6 880.0,429.6 890.0,422.0 900.0,422.0 910.0,422.0 920.0,422.0 930.0,422.0 940.0,421.9 950.0,421.8 960.0,421.7 970.0,421.5" fill="none" stroke="#1b1b1b" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="390.0,431.2 378.0,431.2 378.0,414.0 390.0,414.0" fill="#ffffff" stroke="#6f6f6f" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="290.0,431.2 278.0,431.2 278.0,414.0 290.0,414.0" fill="#ffffff" stroke="#6f6f6f" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="190.0,431.2 178.0,431.2 178.0,414.0 190.0,414.0" fill="#ffffff" stroke="#6f6f6f" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="387.2,414.0 180.8,414.0 180.8,404.0 387.2,404.0" fill="#cfc9bd" stroke="#1b1b1b" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="394.0,324.0 387.2,324.0 387.2,316.0 394.0,316.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polyline points="394.0,404.0 394.0,324.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="387.2,404.0 387.2,324.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="180.8,414.0 174.0,414.0 174.0,316.0 180.8,316.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polygon points="264.8,404.0 260.8,404.0 260.8,312.0 264.8,312.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polygon points="387.2,312.0 180.8,312.0 180.8,302.0 387.2,302.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polygon points="150.0,322.1 284.0,209.7 394.8,302.7 394.8,315.7 284.0,222.8 150.0,335.2" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="350.8,302.0 349.2,302.0 349.2,279.2 350.8,279.2" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="220.8,302.0 219.2,302.0 219.2,278.0 220.8,278.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="329.6,370.0 289.6,370.0 289.6,324.0 329.6,324.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="285.2,370.0 242.8,370.0 242.8,324.0 285.2,324.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="204.8,404.0 180.8,404.0 180.8,368.0 204.8,368.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="194.8,346.0 180.8,346.0 180.8,318.0 194.8,318.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="372.0,404.0 296.0,404.0 296.0,370.0 372.0,370.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="318.0" y="354.2" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Allrum (bef.)</text>
+<text x="222.0" y="353.9" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Kök</text>
+<text x="284.0" y="277.9" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Sovloft</text>
+<polygon points="612.0,404.8 396.0,404.8 396.0,404.0 612.0,404.0" fill="#c0704c" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="612.0,408.8 396.0,408.8 396.0,404.8 612.0,404.8" fill="#bdbab3" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="612.0,420.8 396.0,420.8 396.0,408.8 612.0,408.8" fill="#f3e6b8" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="612.0,429.6 396.0,429.6 396.0,420.8 612.0,420.8" fill="#d9d5cc" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="397.4,402.0 394.6,402.0 394.6,306.7 397.4,306.7" fill="#ffffff" stroke="#1f3a2c" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="440.6,402.0 437.8,402.0 437.8,295.1 440.6,295.1" fill="#ffffff" stroke="#1f3a2c" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="483.8,402.0 481.0,402.0 481.0,283.5 483.8,283.5" fill="#ffffff" stroke="#1f3a2c" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="527.0,402.0 524.2,402.0 524.2,283.5 527.0,283.5" fill="#ffffff" stroke="#1f3a2c" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="570.2,402.0 567.4,402.0 567.4,295.1 570.2,295.1" fill="#ffffff" stroke="#1f3a2c" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="613.4,402.0 610.6,402.0 610.6,306.7 613.4,306.7" fill="#ffffff" stroke="#1f3a2c" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="396.0,402.0 612.0,402.0 612.0,307.2 504.0,277.7 396.0,307.2" fill="#dbe7e8" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polygon points="612.0,319.2 396.0,319.2 396.0,316.4 612.0,316.4" fill="#1f3a2c" stroke="#1f3a2c" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="394.0,312.4 394.0,307.2 504.0,277.7 614.0,307.2 614.0,312.4 504.0,282.9" fill="#1f3a2c" stroke="#1f3a2c" stroke-width="0.4" stroke-linejoin="round"/>
+<polyline points="394.0,306.0 504.0,276.5 614.0,306.0" fill="none" stroke="#1b1b1b" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="506.4,284.1 501.6,284.1 501.6,276.9 506.4,276.9" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="509.2,276.5 498.8,276.5 498.8,273.3 509.2,273.3" fill="#1f3a2c" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polyline points="400.8,306.4 400.8,312.4 394.0,312.4 394.0,306.4" fill="none" stroke="#1b1b1b" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="614.0,306.4 614.0,312.4 607.2,312.4 607.2,306.4" fill="none" stroke="#1b1b1b" stroke-width="1.0" stroke-linejoin="round"/>
+<polygon points="540.0,375.6 468.0,375.6 468.0,374.0 540.0,374.0" fill="#ffffff" stroke="#2a2a2a" stroke-width="0.7" stroke-linejoin="round"/>
+<polygon points="538.8,404.0 536.4,404.0 536.4,375.6 538.8,375.6" fill="#ffffff" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="471.6,404.0 469.2,404.0 469.2,375.6 471.6,375.6" fill="#ffffff" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="536.4,387.2 519.6,387.2 519.6,385.6 536.4,385.6" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="536.4,385.6 519.6,385.6 519.6,368.8 536.4,368.8" fill="none" stroke="#b9b9b9" stroke-width="0.4" stroke-linejoin="round"/>
+<polygon points="512.4,387.2 495.6,387.2 495.6,385.6 512.4,385.6" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="512.4,385.6 495.6,385.6 495.6,368.8 512.4,368.8" fill="none" stroke="#b9b9b9" stroke-width="0.4" stroke-linejoin="round"/>
+<polygon points="488.4,387.2 471.6,387.2 471.6,385.6 488.4,385.6" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="488.4,385.6 471.6,385.6 471.6,368.8 488.4,368.8" fill="none" stroke="#b9b9b9" stroke-width="0.4" stroke-linejoin="round"/>
+<polyline points="504.0,324.0 504.0,284.1" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="512.8,332.8 495.2,332.8 502.0,323.2 506.0,323.2" fill="#fff4dc" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="422.8,404.0 405.2,404.0 405.2,389.6 422.8,389.6" fill="#e2b496" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<circle cx="414.0" cy="353.6" r="18.0" fill="#e8eedf" stroke="#8aa07a" stroke-width="0.5"/>
+<polygon points="602.8,404.0 585.2,404.0 585.2,389.6 602.8,389.6" fill="#e2b496" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<circle cx="594.0" cy="358.4" r="20.0" fill="#e8eedf" stroke="#8aa07a" stroke-width="0.5"/>
+<text x="504.0" y="358.2" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Vinterträdgård</text>
+<polygon points="874.0,404.6 626.0,404.6 626.0,404.0 874.0,404.0" fill="#c99a62" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="874.0,408.8 626.0,408.8 626.0,404.6 874.0,404.6" fill="#bdbab3" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="874.0,420.8 626.0,420.8 626.0,408.8 874.0,408.8" fill="#f3e6b8" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="874.0,429.6 626.0,429.6 626.0,420.8 874.0,420.8" fill="#d9d5cc" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="626.0,429.6 614.0,429.6 614.0,404.8 626.0,404.8" fill="#bdbab3" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="886.0,429.6 874.0,429.6 874.0,404.8 886.0,404.8" fill="#bdbab3" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="626.0,320.0 614.0,320.0 614.0,194.0 626.0,194.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polyline points="626.0,404.0 626.0,320.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="614.0,404.0 614.0,320.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="886.0,404.8 874.0,404.8 874.0,194.0 886.0,194.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polygon points="874.0,304.0 626.0,304.0 626.0,288.8 874.0,288.8" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polygon points="874.0,192.8 626.0,192.8 626.0,190.8 874.0,190.8" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="874.0,190.8 626.0,190.8 626.0,176.0 874.0,176.0" fill="#f3e6b8" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="784.0,404.0 780.0,404.0 780.0,304.0 784.0,304.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="812.0,288.8 808.0,288.8 808.0,192.8 812.0,192.8" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="680.0,206.8 676.0,206.8 676.0,192.8 680.0,192.8" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.3" stroke-linejoin="round"/>
+<polyline points="680.0,288.8 680.0,206.8" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="676.0,288.8 676.0,206.8" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="596.0,190.0 750.0,93.8 904.0,190.0 904.0,204.2 750.0,108.0 596.0,204.2" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="874.0,176.0 750.0,108.8" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="626.0,176.0 750.0,108.8" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="750.0,176.0 750.0,108.8" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="812.0,176.0 750.0,148.8" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="688.0,176.0 750.0,148.8" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="662.0,404.0 626.0,404.0 626.0,368.0 662.0,368.0" fill="#ffffff" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="662.0,396.8 626.0,396.8" fill="none" stroke="#b9b9b9" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="662.0,389.6 626.0,389.6" fill="none" stroke="#b9b9b9" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="662.0,382.4 626.0,382.4" fill="none" stroke="#b9b9b9" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="662.0,375.2 626.0,375.2" fill="none" stroke="#b9b9b9" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="662.0,368.0 662.0,360.1 672.0,360.1 672.0,352.2 682.0,352.2 682.0,344.2 692.0,344.2 692.0,336.3 702.0,336.3 702.0,328.4 712.0,328.4 712.0,320.5 722.0,320.5 722.0,312.6 732.0,312.6 732.0,304.6 742.0,304.6 742.0,296.7 752.0,296.7 752.0,288.8 762.0,288.8 762.0,304.0 670.0,376.0" fill="#ffffff" stroke="#2a2a2a" stroke-width="0.7" stroke-linejoin="round"/>
+<polyline points="656.0,332.0 762.0,252.8" fill="none" stroke="#6f6f6f" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="762.0,252.8 762.0,288.8" fill="none" stroke="#6f6f6f" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="734.0,340.0 694.0,340.0 694.0,264.0 734.0,264.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="850.0,360.0 814.0,360.0 814.0,320.0 850.0,320.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="836.0,246.0 810.0,246.0 810.0,214.0 836.0,214.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="828.0" y="353.9" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Tvätt / teknik</text>
+<text x="710.0" y="389.9" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Hall</text>
+<text x="738.0" y="233.8" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Övre hall</text>
+<text x="842.0" y="229.8" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Dusch</text>
+<text x="648.0" y="233.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Förråd</text>
+<text x="750.0" y="161.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Kallvind</text>
+<polygon points="922.0,404.0 916.0,395.2 928.0,395.2" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="942.0,404.0 902.0,404.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="910.0" y="392.8" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="start">±0,00 färdigt golv</text>
+<polygon points="922.0,288.8 916.0,280.0 928.0,280.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="942.0,288.8 902.0,288.8" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="910.0" y="277.6" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="start">+2,88 golv plan 2</text>
+<polygon points="922.0,93.8 916.0,85.0 928.0,85.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="942.0,93.8 902.0,93.8" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="910.0" y="82.6" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="start">+7.75 nock</text>
+<polygon points="922.0,192.8 916.0,184.0 928.0,184.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="942.0,192.8 902.0,192.8" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="910.0" y="181.6" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="start">+5,28 tak plan 2</text>
+<polygon points="94.0,209.7 88.0,200.9 100.0,200.9" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="114.0,209.7 74.0,209.7" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="106.0" y="198.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="end">+4.86 nock (bef.)</text>
+<polygon points="504.0,247.7 498.0,238.9 510.0,238.9" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="524.0,247.7 484.0,247.7" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="492.0" y="236.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="start">+3.16 nock glastak</text>
+<polyline points="910.0,404.0 910.0,304.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="914.8,408.8 905.2,399.2" fill="none" stroke="#2a2a2a" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="920.0,404.0 900.0,404.0" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="914.8,308.8 905.2,299.2" fill="none" stroke="#2a2a2a" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="920.0,304.0 900.0,304.0" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="905.0" y="354.0" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#2a2a2a" text-anchor="middle" transform="rotate(-90 905.0 354.0)">2,5</text>
+<polyline points="910.0,288.8 910.0,192.8" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="914.8,293.6 905.2,284.0" fill="none" stroke="#2a2a2a" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="920.0,288.8 900.0,288.8" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="914.8,197.6 905.2,188.0" fill="none" stroke="#2a2a2a" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="920.0,192.8 900.0,192.8" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="905.0" y="240.8" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#2a2a2a" text-anchor="middle" transform="rotate(-90 905.0 240.8)">2,4</text>
+<polyline points="174.0,454.0 394.0,454.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="178.8,458.8 169.2,449.2" fill="none" stroke="#2a2a2a" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="174.0,464.0 174.0,444.0" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="398.8,458.8 389.2,449.2" fill="none" stroke="#2a2a2a" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="394.0,464.0 394.0,444.0" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="284.0" y="449.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="middle">5,5</text>
+<polyline points="394.0,454.0 614.0,454.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="398.8,458.8 389.2,449.2" fill="none" stroke="#2a2a2a" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="394.0,464.0 394.0,444.0" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="618.8,458.8 609.2,449.2" fill="none" stroke="#2a2a2a" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="614.0,464.0 614.0,444.0" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="504.0" y="449.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="middle">5,5</text>
+<polyline points="614.0,454.0 886.0,454.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="618.8,458.8 609.2,449.2" fill="none" stroke="#2a2a2a" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="614.0,464.0 614.0,444.0" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="890.8,458.8 881.2,449.2" fill="none" stroke="#2a2a2a" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="886.0,464.0 886.0,444.0" fill="none" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="750.0" y="449.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="middle">6,8</text>
+<circle cx="394.0" cy="302.0" r="9" fill="#1f3a2c"/>
+<text x="394.0" y="306.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<circle cx="504.0" cy="263.7" r="9" fill="#1f3a2c"/>
+<text x="504.0" y="267.7" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+<circle cx="614.0" cy="294.0" r="9" fill="#1f3a2c"/>
+<text x="614.0" y="298.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+<circle cx="874.0" cy="416.0" r="9" fill="#1f3a2c"/>
+<text x="874.0" y="420.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+<circle cx="714.0" cy="312.0" r="9" fill="#1f3a2c"/>
+<text x="714.0" y="316.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+<circle cx="802.0" cy="140.0" r="9" fill="#1f3a2c"/>
+<text x="802.0" y="144.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">6</text>
+<circle cx="194.0" cy="424.0" r="9" fill="#1f3a2c"/>
+<text x="194.0" y="428.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">7</text>
+<text x="58.0" y="520.0" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#2a2a2a" text-anchor="start" letter-spacing="1.2">SEKTION A–A</text>
+<text x="58.0" y="537.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#6f6f6f" text-anchor="start">Befintligt allrum – vinterträdgård – nytt hus med trappa och övervåning</text>
+<rect x="58.0" y="548.0" width="40.0" height="5" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.6"/>
+<rect x="98.0" y="548.0" width="40.0" height="5" fill="#fff" stroke="#1b1b1b" stroke-width="0.6"/>
+<rect x="138.0" y="548.0" width="40.0" height="5" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.6"/>
+<rect x="178.0" y="548.0" width="40.0" height="5" fill="#fff" stroke="#1b1b1b" stroke-width="0.6"/>
+<rect x="218.0" y="548.0" width="40.0" height="5" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.6"/>
+<text x="58.0" y="566.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">0</text>
+<text x="98.0" y="566.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">1</text>
+<text x="138.0" y="566.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">2</text>
+<text x="178.0" y="566.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">3</text>
+<text x="218.0" y="566.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">4</text>
+<text x="258.0" y="566.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">5 m</text>
+<polygon points="50.0,955.8 60.0,954.7 70.0,953.8 80.0,953.1 90.0,952.6 100.0,952.2 110.0,952.0 120.0,952.0 130.0,952.0 140.0,952.0 150.0,952.0 160.0,952.0 170.0,952.0 180.0,952.0 190.0,952.0 200.0,952.0 210.0,952.0 220.0,952.0 230.0,952.0 240.0,952.0 250.0,952.0 260.0,952.0 270.0,952.0 280.0,952.0 290.0,952.0 300.0,952.0 310.0,952.0 320.0,952.0 330.0,952.0 340.0,952.0 350.0,952.0 360.0,952.0 370.0,952.0 380.0,952.0 390.0,952.0 400.0,952.0 410.0,952.0 420.0,952.0 430.0,952.0 440.0,952.0 450.0,952.0 460.0,952.0 470.0,952.0 480.0,952.0 490.0,952.0 500.0,952.0 510.0,952.0 520.0,952.0 530.0,952.0 540.0,952.0 550.0,952.0 560.0,952.0 570.0,952.0 580.0,952.0 590.0,952.0 600.0,952.0 610.0,952.0 620.0,952.0 630.0,952.0 640.0,952.0 650.0,952.0 660.0,952.0 670.0,952.0 680.0,952.0 690.0,952.0 700.0,952.0 710.0,952.0 720.0,952.0 730.0,952.0 740.0,952.0 750.0,952.0 760.0,952.0 770.0,952.0 780.0,952.0 790.0,952.0 800.0,952.0 810.0,952.0 820.0,952.0 830.0,952.0 840.0,952.0 850.0,952.0 860.0,952.0 870.0,952.0 880.0,952.0 890.0,952.0 900.0,952.0 910.0,952.0 920.0,952.0 930.0,952.0 940.0,951.9 950.0,951.8 960.0,951.7 970.0,951.5 970.0,1002.0 50.0,1002.0" fill="#eef1e6" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polygon points="396.0,932.0 612.0,932.0 612.0,837.2 504.0,807.7 396.0,837.2" fill="#dbe7e8" stroke="#1f3a2c" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="397.6,932.0 394.4,932.0 394.4,836.7 397.6,836.7" fill="#1f3a2c" stroke="#1f3a2c" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="440.8,932.0 437.6,932.0 437.6,825.1 440.8,825.1" fill="#1f3a2c" stroke="#1f3a2c" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="484.0,932.0 480.8,932.0 480.8,813.5 484.0,813.5" fill="#1f3a2c" stroke="#1f3a2c" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="527.2,932.0 524.0,932.0 524.0,813.5 527.2,813.5" fill="#1f3a2c" stroke="#1f3a2c" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="570.4,932.0 567.2,932.0 567.2,825.1 570.4,825.1" fill="#1f3a2c" stroke="#1f3a2c" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="613.6,932.0 610.4,932.0 610.4,836.7 613.6,836.7" fill="#1f3a2c" stroke="#1f3a2c" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="612.0,849.2 396.0,849.2 396.0,846.4 612.0,846.4" fill="#1f3a2c" stroke="#1f3a2c" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="612.0,932.8 396.0,932.8 396.0,929.6 612.0,929.6" fill="#1f3a2c" stroke="#1f3a2c" stroke-width="0.3" stroke-linejoin="round"/>
+<polygon points="526.0,932.0 482.0,932.0 482.0,849.2 526.0,849.2" fill="none" stroke="#1f3a2c" stroke-width="1.2" stroke-linejoin="round"/>
+<polyline points="504.0,932.0 504.0,849.2" fill="none" stroke="#1f3a2c" stroke-width="1.0" stroke-linejoin="round"/>
+<polygon points="394.0,842.4 394.0,836.0 504.0,806.5 614.0,836.0 614.0,842.4 504.0,812.9" fill="#1f3a2c" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="614.0,842.4 607.2,842.4 607.2,836.4 614.0,836.4" fill="#a9adb0" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polygon points="400.8,842.4 394.0,842.4 394.0,836.4 400.8,836.4" fill="#a9adb0" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polygon points="613.2,960.4 416.0,960.4 416.0,940.0 613.2,940.0" fill="#d8d3c8" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="598.0,960.4 430.0,960.4 430.0,946.4 598.0,946.4" fill="#e3dfd6" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="602.0,940.0 582.0,940.0 582.0,922.0 602.0,922.0" fill="#c98a64" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<circle cx="592.0" cy="878.0" r="28.0" fill="#dfe8d4" stroke="#7d9670" stroke-width="0.6"/>
+<polygon points="442.0,940.0 422.0,940.0 422.0,922.0 442.0,922.0" fill="#c98a64" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<circle cx="432.0" cy="886.0" r="20.0" fill="#dfe8d4" stroke="#7d9670" stroke-width="0.6"/>
+<polygon points="274.0,766.0 262.0,766.0 262.0,736.0 274.0,736.0" fill="#b0543a" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="174.0,844.0 116.0,844.0 116.0,808.0 174.0,808.0" fill="#a9563c" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="120.0,934.0 120.0,844.0" fill="none" stroke="#2a2a2a" stroke-width="1.2" stroke-linejoin="round"/>
+<polygon points="174.0,936.0 120.0,936.0 120.0,934.0 174.0,934.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polyline points="174.0,898.0 120.0,898.0" fill="none" stroke="#2a2a2a" stroke-width="0.8" stroke-linejoin="round"/>
+<polygon points="394.0,944.0 174.0,944.0 174.0,846.0 284.0,753.2 394.0,846.0" fill="#e6dfd0" stroke="#1b1b1b" stroke-width="0.8" stroke-linejoin="round"/>
+<polyline points="386.4,944.0 386.4,839.6" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="378.8,944.0 378.8,833.2" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="371.2,944.0 371.2,826.9" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="363.6,944.0 363.6,820.5" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="356.0,944.0 356.0,814.1" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="348.4,944.0 348.4,807.7" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="340.8,944.0 340.8,801.4" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="333.2,944.0 333.2,795.0" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="325.6,944.0 325.6,788.6" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="318.0,944.0 318.0,782.2" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="310.4,944.0 310.4,775.9" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="302.8,944.0 302.8,769.5" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="295.2,944.0 295.2,763.1" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="287.6,944.0 287.6,756.7" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="280.0,944.0 280.0,757.1" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="272.4,944.0 272.4,763.4" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="264.8,944.0 264.8,769.8" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="257.2,944.0 257.2,776.2" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="249.6,944.0 249.6,782.6" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="242.0,944.0 242.0,788.9" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="234.4,944.0 234.4,795.3" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="226.8,944.0 226.8,801.7" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="219.2,944.0 219.2,808.1" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="211.6,944.0 211.6,814.4" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="204.0,944.0 204.0,820.8" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="196.4,944.0 196.4,827.2" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="188.8,944.0 188.8,833.6" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="181.2,944.0 181.2,840.0" fill="none" stroke="#cfc6b3" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="394.0,954.0 174.0,954.0 174.0,944.0 394.0,944.0" fill="#4a4640" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="394.8,944.0 389.6,944.0 389.6,846.0 394.8,846.0" fill="#ffffff" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="178.4,944.0 173.2,944.0 173.2,846.0 178.4,846.0" fill="#ffffff" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="260.4,816.0 261.0,810.7 262.7,805.8 265.5,801.3 269.3,797.5 273.8,794.7 278.7,793.0 284.0,792.4 289.3,793.0 294.2,794.7 298.7,797.5 302.5,801.3 305.3,805.8 307.0,810.7 307.6,816.0" fill="#ffffff" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="304.0,816.0 264.0,816.0 264.0,816.0 264.7,810.8 266.7,806.0 269.9,801.9 274.0,798.7 278.8,796.7 284.0,796.0 289.2,796.7 294.0,798.7 298.1,801.9 301.3,806.0 303.3,810.8 304.0,816.0" fill="#2c3a3c" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="284.0,816.0 269.9,801.9" fill="none" stroke="#ffffff" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="284.0,816.0 284.0,796.0" fill="none" stroke="#ffffff" stroke-width="1.0" stroke-linejoin="round"/>
+<polyline points="284.0,816.0 298.1,801.9" fill="none" stroke="#ffffff" stroke-width="1.0" stroke-linejoin="round"/>
+<polygon points="307.6,819.2 260.4,819.2 260.4,816.0 307.6,816.0" fill="#ffffff" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="150.0,850.9 284.0,738.5 418.0,850.9 418.0,866.6 284.0,754.2 150.0,866.6" fill="#ffffff" stroke="#2a2a2a" stroke-width="0.7" stroke-linejoin="round"/>
+<polyline points="150.0,850.9 284.0,738.5 418.0,850.9" fill="none" stroke="#a9563c" stroke-width="3.0" stroke-linejoin="round"/>
+<polygon points="398.8,950.0 396.0,950.0 396.0,850.0 398.8,850.0" fill="#c9cdd0" stroke="#6f6f6f" stroke-width="0.4" stroke-linejoin="round"/>
+<polygon points="886.0,959.6 614.0,959.6 614.0,934.8 886.0,934.8" fill="#b9b5ad" stroke="#1b1b1b" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="886.0,934.8 614.0,934.8 614.0,724.0 750.0,639.0 886.0,724.0" fill="#cfa45e" stroke="#1b1b1b" stroke-width="0.8" stroke-linejoin="round"/>
+<polyline points="621.6,934.8 621.6,721.3" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="629.2,934.8 629.2,716.5" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="636.8,934.8 636.8,711.8" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="644.4,934.8 644.4,707.0" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="652.0,934.8 652.0,702.3" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="659.6,934.8 659.6,697.5" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="667.2,934.8 667.2,692.8" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="674.8,934.8 674.8,688.0" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="682.4,934.8 682.4,683.3" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="690.0,934.8 690.0,678.5" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="697.6,934.8 697.6,673.8" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="705.2,934.8 705.2,669.0" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="712.8,934.8 712.8,664.3" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="720.4,934.8 720.4,659.5" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="728.0,934.8 728.0,654.8" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="735.6,934.8 735.6,650.0" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="743.2,934.8 743.2,645.3" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="750.8,934.8 750.8,641.5" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="758.4,934.8 758.4,646.3" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="766.0,934.8 766.0,651.0" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="773.6,934.8 773.6,655.8" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="781.2,934.8 781.2,660.5" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="788.8,934.8 788.8,665.3" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="796.4,934.8 796.4,670.0" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="804.0,934.8 804.0,674.8" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="811.6,934.8 811.6,679.5" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="819.2,934.8 819.2,684.3" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="826.8,934.8 826.8,689.0" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="834.4,934.8 834.4,693.8" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="842.0,934.8 842.0,698.5" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="849.6,934.8 849.6,703.3" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="857.2,934.8 857.2,708.0" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="864.8,934.8 864.8,712.8" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="872.4,934.8 872.4,717.5" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="880.0,934.8 880.0,722.3" fill="none" stroke="#b48a48" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="886.0,834.0 614.0,834.0 614.0,829.2 886.0,829.2" fill="#efe6d2" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="886.8,934.8 881.2,934.8 881.2,724.0 886.8,724.0" fill="#efe6d2" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="618.8,934.8 613.2,934.8 613.2,724.0 618.8,724.0" fill="#efe6d2" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="710.0,910.0 654.0,910.0 654.0,842.0 710.0,842.0" fill="#efe6d2" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="706.0,906.0 658.0,906.0 658.0,846.0 706.0,846.0" fill="#1f3a2c" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="703.6,903.6 683.8,903.6 683.8,848.4 703.6,848.4" fill="#33454a" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polygon points="680.2,903.6 660.4,903.6 660.4,848.4 680.2,848.4" fill="#33454a" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polyline points="706.0,886.0 658.0,886.0" fill="none" stroke="#1f3a2c" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="706.0,866.0 658.0,866.0" fill="none" stroke="#1f3a2c" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="846.0,910.0 790.0,910.0 790.0,842.0 846.0,842.0" fill="#efe6d2" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="842.0,906.0 794.0,906.0 794.0,846.0 842.0,846.0" fill="#1f3a2c" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="839.6,903.6 819.8,903.6 819.8,848.4 839.6,848.4" fill="#33454a" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polygon points="816.2,903.6 796.4,903.6 796.4,848.4 816.2,848.4" fill="#33454a" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polyline points="842.0,886.0 794.0,886.0" fill="none" stroke="#1f3a2c" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="842.0,866.0 794.0,866.0" fill="none" stroke="#1f3a2c" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="708.0,788.8 656.0,788.8 656.0,728.8 708.0,728.8" fill="#efe6d2" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="704.0,784.8 660.0,784.8 660.0,732.8 704.0,732.8" fill="#1f3a2c" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="701.6,782.4 683.8,782.4 683.8,735.2 701.6,735.2" fill="#33454a" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polygon points="680.2,782.4 662.4,782.4 662.4,735.2 680.2,735.2" fill="#33454a" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polyline points="704.0,767.5 660.0,767.5" fill="none" stroke="#1f3a2c" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="704.0,750.1 660.0,750.1" fill="none" stroke="#1f3a2c" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="844.0,788.8 792.0,788.8 792.0,728.8 844.0,728.8" fill="#efe6d2" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="840.0,784.8 796.0,784.8 796.0,732.8 840.0,732.8" fill="#1f3a2c" stroke="#2a2a2a" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="837.6,782.4 819.8,782.4 819.8,735.2 837.6,735.2" fill="#33454a" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polygon points="816.2,782.4 798.4,782.4 798.4,735.2 816.2,735.2" fill="#33454a" stroke="none" stroke-width="0" stroke-linejoin="round"/>
+<polyline points="840.0,767.5 796.0,767.5" fill="none" stroke="#1f3a2c" stroke-width="1.6" stroke-linejoin="round"/>
+<polyline points="840.0,750.1 796.0,750.1" fill="none" stroke="#1f3a2c" stroke-width="1.6" stroke-linejoin="round"/>
+<polygon points="596.0,718.8 750.0,622.6 904.0,718.8 904.0,734.9 750.0,638.7 596.0,734.9" fill="#efe6d2" stroke="#2a2a2a" stroke-width="0.7" stroke-linejoin="round"/>
+<polyline points="596.0,718.8 750.0,622.6 904.0,718.8" fill="none" stroke="#a9563c" stroke-width="3.0" stroke-linejoin="round"/>
+<polygon points="613.2,950.0 610.4,950.0 610.4,724.0 613.2,724.0" fill="#a9adb0" stroke="#6f6f6f" stroke-width="0.4" stroke-linejoin="round"/>
+<polyline points="50.0,955.8 60.0,954.7 70.0,953.8 80.0,953.1 90.0,952.6 100.0,952.2 110.0,952.0 120.0,952.0 130.0,952.0 140.0,952.0 150.0,952.0 160.0,952.0 170.0,952.0 180.0,952.0 190.0,952.0 200.0,952.0 210.0,952.0 220.0,952.0 230.0,952.0 240.0,952.0 250.0,952.0 260.0,952.0 270.0,952.0 280.0,952.0 290.0,952.0 300.0,952.0 310.0,952.0 320.0,952.0 330.0,952.0 340.0,952.0 350.0,952.0 360.0,952.0 370.0,952.0 380.0,952.0 390.0,952.0 400.0,952.0 410.0,952.0 420.0,952.0 430.0,952.0 440.0,952.0 450.0,952.0 460.0,952.0 470.0,952.0 480.0,952.0 490.0,952.0 500.0,952.0 510.0,952.0 520.0,952.0 530.0,952.0 540.0,952.0 550.0,952.0 560.0,952.0 570.0,952.0 580.0,952.0 590.0,952.0 600.0,952.0 610.0,952.0 620.0,952.0 630.0,952.0 640.0,952.0 650.0,952.0 660.0,952.0 670.0,952.0 680.0,952.0 690.0,952.0 700.0,952.0 710.0,952.0 720.0,952.0 730.0,952.0 740.0,952.0 750.0,952.0 760.0,952.0 770.0,952.0 780.0,952.0 790.0,952.0 800.0,952.0 810.0,952.0 820.0,952.0 830.0,952.0 840.0,952.0 850.0,952.0 860.0,952.0 870.0,952.0 880.0,952.0 890.0,952.0 900.0,952.0 910.0,952.0 920.0,952.0 930.0,952.0 940.0,951.9 950.0,951.8 960.0,951.7 970.0,951.5" fill="none" stroke="#1b1b1b" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="770.0,762.0 770.0,572.0" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<circle cx="770.0" cy="762.0" r="2.0" fill="#6f6f6f" stroke="#6f6f6f" stroke-width="0.6"/>
+<text x="770.0" y="569.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">Stående träpanel, dämpad ockra</text>
+<polyline points="490.0,886.0 434.0,748.0" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<circle cx="490.0" cy="886.0" r="2.0" fill="#6f6f6f" stroke="#6f6f6f" stroke-width="0.6"/>
+<text x="434.0" y="745.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">Isolerglas i skogsgröna profiler</text>
+<polyline points="346.0,878.0 306.0,700.0" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<circle cx="346.0" cy="878.0" r="2.0" fill="#6f6f6f" stroke="#6f6f6f" stroke-width="0.6"/>
+<text x="306.0" y="697.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">Stående panel, ljus gråbeige (bef.)</text>
+<polyline points="226.0,776.0 186.0,668.0" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<circle cx="226.0" cy="776.0" r="2.0" fill="#6f6f6f" stroke="#6f6f6f" stroke-width="0.6"/>
+<text x="186.0" y="665.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">Röda takpannor</text>
+<polygon points="922.0,934.0 916.0,925.2 928.0,925.2" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="942.0,934.0 902.0,934.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="910.0" y="922.8" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="start">±0,00</text>
+<polygon points="922.0,623.8 916.0,615.0 928.0,615.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="942.0,623.8 902.0,623.8" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="910.0" y="612.6" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="start">+7.75</text>
+<polygon points="90.0,739.7 84.0,730.9 96.0,730.9" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
+<polyline points="110.0,739.7 70.0,739.7" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="102.0" y="728.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="end">+4.86</text>
+<text x="58.0" y="1050.0" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#2a2a2a" text-anchor="start" letter-spacing="1.2">FASAD MOT VÄSTER</text>
+<text x="58.0" y="1067.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#6f6f6f" text-anchor="start">Gårdsfasaden med vinterträdgården mellan husen</text>
+<rect x="58.0" y="1078.0" width="40.0" height="5" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.6"/>
+<rect x="98.0" y="1078.0" width="40.0" height="5" fill="#fff" stroke="#1b1b1b" stroke-width="0.6"/>
+<rect x="138.0" y="1078.0" width="40.0" height="5" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.6"/>
+<rect x="178.0" y="1078.0" width="40.0" height="5" fill="#fff" stroke="#1b1b1b" stroke-width="0.6"/>
+<rect x="218.0" y="1078.0" width="40.0" height="5" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.6"/>
+<text x="58.0" y="1096.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">0</text>
+<text x="98.0" y="1096.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">1</text>
+<text x="138.0" y="1096.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">2</text>
+<text x="178.0" y="1096.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">3</text>
+<text x="218.0" y="1096.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">4</text>
+<text x="258.0" y="1096.0" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="normal" fill="#2a2a2a" text-anchor="middle">5 m</text>
+<text x="1012.0" y="90.0" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2a2a2a" text-anchor="start" letter-spacing="0.5">KONSTRUKTIONSPRINCIPER (skiss)</text>
+<circle cx="1021" cy="114" r="9" fill="#1f3a2c"/>
+<text x="1021.0" y="118.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+<text x="1040.0" y="118.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Befintlig takfot kapas vid vägglivet. Ränndal och plåtbeslag</text>
+<text x="1040.0" y="133.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">tar vatten från glastaket.</text>
+<circle cx="1021" cy="156" r="9" fill="#1f3a2c"/>
+<text x="1021.0" y="160.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+<text x="1040.0" y="160.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Lågt sadeltak i isolerglas ca 15°, nock ca +3,2 m. Öppningsbar</text>
+<text x="1040.0" y="175.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">taklucka och utvändig screen vid nocken.</text>
+<circle cx="1021" cy="198" r="9" fill="#1f3a2c"/>
+<text x="1021.0" y="202.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+<text x="1040.0" y="202.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Ränndal och plåtbeslag mot nya husets vägg, stuprör i gavlarna.</text>
+<circle cx="1021" cy="225" r="9" fill="#1f3a2c"/>
+<text x="1021.0" y="229.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+<text x="1040.0" y="229.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Isolerad platta på mark med kantelement och golvvärme. Samma</text>
+<text x="1040.0" y="244.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">golvnivå ±0,00 i alla tre delar.</text>
+<circle cx="1021" cy="267" r="9" fill="#1f3a2c"/>
+<text x="1021.0" y="271.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+<text x="1040.0" y="271.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Mellanbjälklag ca 380 mm. L-trappa med 4 + 10 steg och vilplan</text>
+<text x="1040.0" y="286.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">i hörnet.</text>
+<circle cx="1021" cy="309" r="9" fill="#1f3a2c"/>
+<text x="1021.0" y="313.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">6</text>
+<text x="1040.0" y="313.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Isolerat vindsbjälklag under kallvind. Takstolar och röda</text>
+<text x="1040.0" y="328.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">lertegelpannor ca 32°.</text>
+<circle cx="1021" cy="351" r="9" fill="#1f3a2c"/>
+<text x="1021.0" y="355.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">7</text>
+<text x="1040.0" y="355.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Befintligt hus kvar på plintar. Loft under sadeltak ca 40°.</text>
+<text x="1012.0" y="392.0" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2a2a2a" text-anchor="start" letter-spacing="0.5">ÖVRIGT</text>
+<text x="1012.0" y="414.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Ny huskropp: ytterväggar ca 300 mm, stående träpanel i dämpad ockra,</text>
+<text x="1012.0" y="430.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">mörkgröna bågar och dörrar, låg grå sockel.</text>
+<text x="1012.0" y="446.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Vinterträdgård: uppvärmt bostadsrum med isolerglas, profiler med</text>
+<text x="1012.0" y="462.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">brutna köldbryggor och golvvärme under terrakottagolv.</text>
+<text x="1012.0" y="478.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Fri rumshöjd ca 2,5 m i entréplan och ca 2,4 m på övervåningen.</text>
+<text x="1012.0" y="494.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Avstånd till tomtgräns och byggnadshöjd ska kontrolleras</text>
+<text x="1012.0" y="510.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">mot detaljplanen innan bygglov.</text>
+</svg>
