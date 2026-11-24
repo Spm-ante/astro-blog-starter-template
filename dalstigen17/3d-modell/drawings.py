@@ -126,23 +126,32 @@ def plan_ground(el, ox, oy, S):
     v.line(6.05, -0.45, 6.05, -4.95, stroke=MID, sw=0.6, dash="5,3"); v.poly([(5.95, -4.75), (6.05, -4.95), (6.15, -4.75)], stroke=MID, sw=0.6, close=False)
     v.text(5.25, -3.9, "passage", 10, fill=MID); v.text(5.25, -4.2, "fri bredd >1,1 m", 10, fill=MID)
     # existing house
-    wall(v, 'x', 0, 8.9, 0, 0.17, [(1.26, 2.14, 'win'), (5.26, 6.85, 'door')])
+    wall(v, 'x', 0, 8.9, 0, 0.17, [(1.26, 2.14, 'win'), (4.9, 7.6, 'glass')])
     wall(v, 'x', 0, 8.9, 5.33, 5.5, [(2.04, 2.76, 'win'), (4.14, 4.92, 'door'), (6.69, 7.46, 'win')])
     wall(v, 'y', 0.17, 5.33, 0, 0.17, []); wall(v, 'y', 0.17, 5.33, 8.73, 8.9, [(1.61, 2.61, 'win'), (2.72, 3.78, 'win')])
     wall(v, 'y', 0.17, 5.33, 2.88, 2.98, [(2.22, 3.0, 'door'), (4.5, 5.28, 'door')]); wall(v, 'x', 0.17, 2.88, 3.34, 3.44, [])
-    wall(v, 'x', 5.75, 7.68, 3.23, 3.33, []); wall(v, 'y', 3.33, 5.33, 5.70, 5.80, [])
-    door(v, 4.14, 5.33, 0.78, 0, -90); door(v, 5.26, 0.17, 0.79, 0, 90); door(v, 6.85, 0.17, 0.79, 180, 90)
+    v.rect(5.70, 5.80, 3.33, 5.33, stroke="#b4532a", sw=0.8, dash="3,2")
+    v.text(6.05, 4.3, "rivs", 9, fill="#b4532a")
+    door(v, 4.14, 5.33, 0.78, 0, -90); v.line(4.9, 0.06, 6.35, 0.06, sw=1.2); v.line(6.15, 0.11, 7.6, 0.11, sw=1.2)
     door(v, 2.88, 3.0, 0.78, -90, 180); door(v, 2.88, 5.28, 0.78, -90, 180)
-    v.rect(5.8, 8.73, 4.73, 5.33, stroke=MID, sw=0.6); v.rect(5.8, 6.45, 3.33, 4.73, stroke=MID, sw=0.6)
-    for a, b in ((6.0, 3.62), (6.27, 3.62), (6.0, 3.9), (6.27, 3.9)): v.circle(a, b, 0.09, stroke=MID, sw=0.5)
-    v.rect(6.95, 7.6, 4.85, 5.2, stroke=MID, sw=0.5); v.rect(8.13, 8.73, 4.73, 5.33, stroke=MID, sw=0.6); v.text(8.43, 5.03, "K/F", 9, fill=MID)
-    v.rect(7.85, 8.68, 0.55, 2.45, stroke=MID, sw=0.6); v.rect(6.6, 7.5, 1.0, 2.0, stroke=MID, sw=0.5)
+    v.rect(5.4, 8.13, 4.73, 5.33, stroke=INK, sw=0.7); v.rect(5.4, 6.6, 4.98, 5.33, stroke=MID, sw=0.5, dash="3,2")
+    v.rect(6.85, 7.45, 4.83, 5.23, stroke=MID, sw=0.5); v.circle(7.15, 5.03, 0.12, stroke=MID, sw=0.5); v.text(7.75, 5.03, "DM", 8, fill=MID)
+    v.rect(8.13, 8.73, 4.03, 5.33, stroke=INK, sw=0.7); v.line(8.13, 4.68, 8.73, 4.68, stroke=MID, sw=0.5); v.text(8.43, 5.0, "K/F", 8, fill=MID); v.text(8.43, 4.35, "ugn", 8, fill=MID)
+    v.rect(5.6, 7.8, 2.55, 3.55, fill="#f4efe6", stroke=INK, sw=0.9); v.line(5.6, 2.85, 7.8, 2.85, stroke=MID, sw=0.5, dash="3,2")
+    for a, b in ((6.45, 3.12), (6.75, 3.12), (6.45, 3.36), (6.75, 3.36)): v.circle(a, b, 0.09, stroke=MID, sw=0.5)
+    for a in (6.0, 6.7, 7.4): v.circle(a, 2.28, 0.18, stroke=MID, sw=0.6)
+    v.rect(8.33, 8.73, 0.35, 2.4, stroke=INK, sw=0.6); v.text(8.5, 2.62, "skänk", 8, fill=MID)
+    v.rect(3.25, 3.95, 0.5, 1.2, stroke=MID, sw=0.5); v.rect(4.25, 4.95, 0.5, 1.2, stroke=MID, sw=0.5); v.circle(4.1, 1.75, 0.28, stroke=MID, sw=0.5)
+    v.rect(2.98, 4.0, 4.73, 5.33, stroke=MID, sw=0.5); v.line(2.98, 4.73, 4.0, 5.33, stroke=MID, sw=0.4)
+    dim(v, 5.35, 3.55, 5.35, 4.73, "1,2", size=9, vertical=True)
+    v.text(6.25, -0.32, "skjutparti ca 2,7 m", 9, fill=MID)
     bed(v, 0.25, 1.2, 0.25, 2.25, 'n'); v.rect(0.2, 1.0, 4.5, 5.3, stroke=MID, sw=0.5); v.line(0.2, 4.5, 1.0, 5.3, stroke=MID, sw=0.4)
     v.rect(0.25, 0.85, 3.47, 4.05, stroke=MID, sw=0.5); v.circle(0.55, 3.76, 0.2, stroke=MID, sw=0.5)
     v.rect(2.2, 2.6, 3.5, 3.75, stroke=MID, sw=0.5); v.circle(2.4, 3.98, 0.2, stroke=MID, sw=0.5)
     for i in range(5): v.line(2.98, 3.4 + 0.19 * i, 3.6, 3.4 + 0.19 * i, stroke=MID, sw=0.5)
     v.rect(2.98, 3.6, 3.4, 4.35, stroke=MID, sw=0.6); v.text(3.3, 4.6, "loft", 9, fill=MID)
-    lbl(v, 6.4, 1.75, "Allrum (bef.)"); lbl(v, 7.1, 4.05, "Kök (bef.)", size=11); lbl(v, 4.3, 4.0, "Hall", size=11)
+    lbl(v, 6.4, 1.15, "Kök med köksö", "ca 17 m²", size=12); v.text(6.7, 3.85, "köksö 2,2 × 1,0 med häll", 9, fill=MID)
+    lbl(v, 4.6, 4.0, "Hall", size=11); v.text(4.1, 2.35, "sittplats", 9, fill=MID)
     lbl(v, 1.55, 1.45, "Sovrum (bef.)", size=11); lbl(v, 1.55, 4.45, "Bad", size=11)
     v.rect(3.09, 5.91, 5.5, 6.83, stroke=INK, sw=0.7); v.rect(4.03, 5.14, 6.83, 7.55, stroke=INK, sw=0.6)
     for i in range(1, 4): v.line(4.03, 6.83 + 0.18 * i, 5.14, 6.83 + 0.18 * i, stroke=INK, sw=0.5)
@@ -302,13 +311,15 @@ ground(v, 6.0)
 for py in (0.25, 2.75, 5.25): v.rect(py - 0.15, py + 0.15, -0.68, -0.25, fill="#ffffff", stroke=MID, sw=0.6)
 v.rect(0.17, 5.33, -0.25, 0.0, fill="#cfc9bd", stroke=CUT, sw=0.6)
 v.rect(0.0, 0.17, 2.0, 2.2, fill=CUT, stroke=CUT, sw=0.4); v.line(0.0, 0.0, 0.0, 2.0, sw=0.6); v.line(0.17, 0.0, 0.17, 2.0, sw=0.6)
-v.rect(5.33, 5.5, -0.25, 2.2, fill=CUT, stroke=CUT, sw=0.4); v.rect(3.23, 3.33, 0.0, 2.3, fill=CUT, stroke=CUT, sw=0.4)
-v.rect(0.17, 5.33, 2.3, 2.55, fill=CUT, stroke=CUT, sw=0.4)
+v.rect(5.33, 5.5, -0.25, 2.2, fill=CUT, stroke=CUT, sw=0.4); v.rect(0.17, 5.33, 2.3, 2.55, fill=CUT, stroke=CUT, sw=0.4)
 roofcut(v, 0.0, 5.5, 2.55, T40, 0.25, 0.02, 0.6)
 v.rect(1.08, 1.12, 2.55, 3.12, fill=CUT, stroke=CUT, sw=0.3); v.rect(4.33, 4.37, 2.55, 3.15, fill=CUT, stroke=CUT, sw=0.3)
 v.rect(1.61, 2.61, 0.85, 2.0, stroke=LIGHT, sw=0.6); v.rect(2.72, 3.78, 0.85, 2.0, stroke=LIGHT, sw=0.6)
-v.rect(4.73, 5.33, 0.0, 0.9, stroke=LIGHT, sw=0.6); v.rect(4.98, 5.33, 1.45, 2.15, stroke=LIGHT, sw=0.6); v.rect(0.55, 2.45, 0.0, 0.85, stroke=LIGHT, sw=0.6)
-lbl(v, 1.9, 1.35, "Allrum (bef.)", size=12); lbl(v, 4.3, 1.35, "Kök", size=11); lbl(v, 2.75, 3.25, "Sovloft", size=11)
+v.rect(4.73, 5.33, 0.0, 0.9, fill="#cfc9bd", stroke=CUT, sw=0.6); v.rect(4.98, 5.33, 1.45, 2.15, fill="#cfc9bd", stroke=CUT, sw=0.6); v.rect(0.35, 2.4, 0.0, 0.9, stroke=LIGHT, sw=0.6)
+v.rect(2.55, 3.55, 0.0, 0.88, fill="#cfc9bd", stroke=CUT, sw=0.6); v.rect(2.25, 3.55, 0.88, 0.92, fill=CUT, stroke=CUT, sw=0.4)
+for py in (2.15, 2.45): v.line(py, 0.0, py, 0.65, stroke=MID, sw=0.6)
+v.line(2.08, 0.65, 2.52, 0.65, stroke=MID, sw=1.2)
+lbl(v, 1.35, 1.6, "Kök / umgänge", size=11); lbl(v, 3.05, 1.1, "Köksö", size=10); lbl(v, 2.75, 3.25, "Sovloft", size=11)
 # winter garden
 for z0, z1, f in ((-0.02, 0.0, "#c0704c"), (-0.12, -0.02, "#bdbab3"), (-0.42, -0.12, "#f3e6b8"), (-0.64, -0.42, "#d9d5cc")): v.rect(-5.45, -0.05, z0, z1, fill=f, stroke=CUT, sw=0.5)
 for yp in [-0.05 - (W - 0.1) * i / 5 for i in range(6)]:
@@ -350,7 +361,7 @@ level(v, -13.2, 0.0, "±0,00 färdigt golv"); level(v, -13.2, 2.88, "+2,88 golv 
 level(v, -13.2, 5.28, "+5,28 tak plan 2"); level(v, 7.5, ZR_OLD, "+%.2f nock (bef.)" % ZR_OLD, 'l'); level(v, M, GZR + 0.75, "+%.2f nock glastak" % GZR)
 dim(v, -12.9, 0.0, -12.9, 2.5, "2,5", vertical=True); dim(v, -12.9, 2.88, -12.9, 5.28, "2,4", vertical=True)
 for a0, a1, t in ((5.5, 0.0, "5,5"), (0.0, -5.5, "5,5"), (-5.5, -12.3, "6,8")): dim(v, a0, -1.25, a1, -1.25, t)
-for k, (a, b) in enumerate(((0.0, 2.55), (M, GZR + 0.35), (-5.5, 2.75), (-12.0, -0.3), (-8.0, 2.3), (-10.2, 6.6), (5.0, -0.5))):
+for k, (a, b) in enumerate(((0.0, 2.55), (M, GZR + 0.35), (-5.5, 2.75), (-12.0, -0.3), (-8.0, 2.3), (-10.2, 6.6), (5.0, -0.5), (0.45, 2.05))):
     x, y = v.P(a, b); el.append('<circle cx="%.1f" cy="%.1f" r="9" fill="%s"/>' % (x, y, GREEN)); T(el, x, y + 4, str(k + 1), 11, "middle", "bold", "#ffffff")
 title(el, 58, 520, "SEKTION A–A", "Befintligt allrum – vinterträdgård – nytt hus med trappa och övervåning")
 scalebar(el, 58, 548, S)
@@ -413,7 +424,8 @@ notes = ["Befintlig takfot kapas vid vägglivet. Ränndal och plåtbeslag tar va
          "Isolerad platta på mark med kantelement och golvvärme. Samma golvnivå ±0,00 i alla tre delar.",
          "Mellanbjälklag ca 380 mm. L-trappa med 4 + 10 steg och vilplan i hörnet.",
          "Isolerat vindsbjälklag under kallvind. Takstolar och röda lertegelpannor ca 32°.",
-         "Befintligt hus kvar på plintar. Loft under sadeltak ca 40°."]
+         "Befintligt hus kvar på plintar. Loft under sadeltak ca 40°.",
+         "Köksväggarna rivs. Öppningen mot vinterträdgården breddas till ca 2,7 m med skjutparti och limträbalk."]
 yy = ny + 28
 for i, n_ in enumerate(notes):
     el.append('<circle cx="%d" cy="%d" r="9" fill="%s"/>' % (nx + 9, yy - 4, GREEN)); T(el, nx + 9, yy, str(i + 1), 11, "middle", "bold", "#ffffff")

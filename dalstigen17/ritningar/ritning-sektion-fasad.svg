@@ -27,18 +27,22 @@
 <polyline points="394.0,404.0 394.0,324.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
 <polyline points="387.2,404.0 387.2,324.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
 <polygon points="180.8,414.0 174.0,414.0 174.0,316.0 180.8,316.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
-<polygon points="264.8,404.0 260.8,404.0 260.8,312.0 264.8,312.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
 <polygon points="387.2,312.0 180.8,312.0 180.8,302.0 387.2,302.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
 <polygon points="150.0,322.1 284.0,209.7 394.8,302.7 394.8,315.7 284.0,222.8 150.0,335.2" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.6" stroke-linejoin="round"/>
 <polygon points="350.8,302.0 349.2,302.0 349.2,279.2 350.8,279.2" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.3" stroke-linejoin="round"/>
 <polygon points="220.8,302.0 219.2,302.0 219.2,278.0 220.8,278.0" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.3" stroke-linejoin="round"/>
 <polygon points="329.6,370.0 289.6,370.0 289.6,324.0 329.6,324.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
 <polygon points="285.2,370.0 242.8,370.0 242.8,324.0 285.2,324.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
-<polygon points="204.8,404.0 180.8,404.0 180.8,368.0 204.8,368.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
-<polygon points="194.8,346.0 180.8,346.0 180.8,318.0 194.8,318.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
-<polygon points="372.0,404.0 296.0,404.0 296.0,370.0 372.0,370.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
-<text x="318.0" y="354.2" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Allrum (bef.)</text>
-<text x="222.0" y="353.9" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Kök</text>
+<polygon points="204.8,404.0 180.8,404.0 180.8,368.0 204.8,368.0" fill="#cfc9bd" stroke="#1b1b1b" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="194.8,346.0 180.8,346.0 180.8,318.0 194.8,318.0" fill="#cfc9bd" stroke="#1b1b1b" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="380.0,404.0 298.0,404.0 298.0,368.0 380.0,368.0" fill="none" stroke="#b9b9b9" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="292.0,404.0 252.0,404.0 252.0,368.8 292.0,368.8" fill="#cfc9bd" stroke="#1b1b1b" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="304.0,368.8 252.0,368.8 252.0,367.2 304.0,367.2" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.4" stroke-linejoin="round"/>
+<polyline points="308.0,404.0 308.0,378.0" fill="none" stroke="#6f6f6f" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="296.0,404.0 296.0,378.0" fill="none" stroke="#6f6f6f" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="310.8,378.0 293.2,378.0" fill="none" stroke="#6f6f6f" stroke-width="1.2" stroke-linejoin="round"/>
+<text x="340.0" y="343.9" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Kök / umgänge</text>
+<text x="272.0" y="363.5" font-family="Helvetica, Arial, sans-serif" font-size="10" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Köksö</text>
 <text x="284.0" y="277.9" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#2a2a2a" text-anchor="middle">Sovloft</text>
 <polygon points="612.0,404.8 396.0,404.8 396.0,404.0 612.0,404.0" fill="#c0704c" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
 <polygon points="612.0,408.8 396.0,408.8 396.0,404.8 612.0,404.8" fill="#bdbab3" stroke="#1b1b1b" stroke-width="0.5" stroke-linejoin="round"/>
@@ -177,6 +181,8 @@
 <text x="802.0" y="144.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">6</text>
 <circle cx="194.0" cy="424.0" r="9" fill="#1f3a2c"/>
 <text x="194.0" y="428.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">7</text>
+<circle cx="376.0" cy="322.0" r="9" fill="#1f3a2c"/>
+<text x="376.0" y="326.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">8</text>
 <text x="58.0" y="520.0" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" fill="#2a2a2a" text-anchor="start" letter-spacing="1.2">SEKTION A–A</text>
 <text x="58.0" y="537.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#6f6f6f" text-anchor="start">Befintligt allrum – vinterträdgård – nytt hus med trappa och övervåning</text>
 <rect x="58.0" y="548.0" width="40.0" height="5" fill="#1b1b1b" stroke="#1b1b1b" stroke-width="0.6"/>
@@ -386,12 +392,16 @@
 <circle cx="1021" cy="351" r="9" fill="#1f3a2c"/>
 <text x="1021.0" y="355.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">7</text>
 <text x="1040.0" y="355.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Befintligt hus kvar på plintar. Loft under sadeltak ca 40°.</text>
-<text x="1012.0" y="392.0" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2a2a2a" text-anchor="start" letter-spacing="0.5">ÖVRIGT</text>
-<text x="1012.0" y="414.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Ny huskropp: ytterväggar ca 300 mm, stående träpanel i dämpad ockra,</text>
-<text x="1012.0" y="430.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">mörkgröna bågar och dörrar, låg grå sockel.</text>
-<text x="1012.0" y="446.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Vinterträdgård: uppvärmt bostadsrum med isolerglas, profiler med</text>
-<text x="1012.0" y="462.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">brutna köldbryggor och golvvärme under terrakottagolv.</text>
-<text x="1012.0" y="478.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Fri rumshöjd ca 2,5 m i entréplan och ca 2,4 m på övervåningen.</text>
-<text x="1012.0" y="494.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Avstånd till tomtgräns och byggnadshöjd ska kontrolleras</text>
-<text x="1012.0" y="510.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">mot detaljplanen innan bygglov.</text>
+<circle cx="1021" cy="378" r="9" fill="#1f3a2c"/>
+<text x="1021.0" y="382.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">8</text>
+<text x="1040.0" y="382.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Köksväggarna rivs. Öppningen mot vinterträdgården breddas till</text>
+<text x="1040.0" y="397.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">ca 2,7 m med skjutparti och limträbalk.</text>
+<text x="1012.0" y="434.0" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#2a2a2a" text-anchor="start" letter-spacing="0.5">ÖVRIGT</text>
+<text x="1012.0" y="456.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Ny huskropp: ytterväggar ca 300 mm, stående träpanel i dämpad ockra,</text>
+<text x="1012.0" y="472.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">mörkgröna bågar och dörrar, låg grå sockel.</text>
+<text x="1012.0" y="488.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Vinterträdgård: uppvärmt bostadsrum med isolerglas, profiler med</text>
+<text x="1012.0" y="504.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">brutna köldbryggor och golvvärme under terrakottagolv.</text>
+<text x="1012.0" y="520.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Fri rumshöjd ca 2,5 m i entréplan och ca 2,4 m på övervåningen.</text>
+<text x="1012.0" y="536.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">Avstånd till tomtgräns och byggnadshöjd ska kontrolleras</text>
+<text x="1012.0" y="552.0" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" fill="#2a2a2a" text-anchor="start">mot detaljplanen innan bygglov.</text>
 </svg>
