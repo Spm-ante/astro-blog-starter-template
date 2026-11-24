@@ -1,0 +1,21 @@
+[
+ {
+  "file": "v1.png",
+  "size": [
+   2528,
+   1696
+  ],
+  "aspect_err_pct": 0.63,
+  "raw_p90_pct": 3.33,
+  "fit_scale": 0.983,
+  "fit_shift_px": [
+   31.0,
+   -16.5
+  ],
+  "stretch_pct": 0.2,
+  "resid_median_pct": 0.91,
+  "resid_p90_pct": 3.33,
+  "lines_pts": 913,
+  "score_pct": 3.33
+ }
+]
