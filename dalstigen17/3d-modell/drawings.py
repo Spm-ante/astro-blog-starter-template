@@ -85,6 +85,7 @@ def title(el, x, y, t, sub):
 
 # ---------- shared new-house geometry (alt 2, after shift) ----------
 NX0, NX1, NYA, NYB = 0.3, 8.9, -12.3, -5.5
+DXN = 0.5  # new house moved east relative to the existing house
 def new_outer(v, floor):
     if floor == 0:
         wall(v, 'x', NX0, NX1, NYB - 0.3, NYB, [(1.3, 2.9, 'glass'), (5.5, 6.7, 'door')])
@@ -102,9 +103,9 @@ def plan_ground(el, ox, oy, S):
     # courtyard terrace + beds
     v.rect(-1.6, 3.66, -5.48, -0.55, fill="#f1efea", stroke=MID, sw=0.6); v.rect(-2.0, -1.6, -5.1, -0.9, fill="#f1efea", stroke=MID, sw=0.6)
     for yy in [-5.48 + 0.47 * i for i in range(1, 11)]: v.line(-1.6, yy, 3.66, yy, stroke="#dcd8cf", sw=0.4)
-    v.rect(-0.02, 3.66, -0.55, -0.03, fill="#e9efe0", stroke=MID, sw=0.5); v.rect(0.3, 3.66, -5.48, -5.0, fill="#e9efe0", stroke=MID, sw=0.5)
+    v.rect(-0.02, 3.66, -0.55, -0.03, fill="#e9efe0", stroke=MID, sw=0.5); v.rect(0.3 + DXN, 3.66, -5.48, -5.0, fill="#e9efe0", stroke=MID, sw=0.5)
     for a in (0.45, 1.25, 2.1, 2.9): v.circle(a, -0.3, 0.2, stroke="#8aa07a", sw=0.5)
-    for a in (0.8, 1.8, 2.8): v.circle(a, -5.25, 0.25, stroke="#8aa07a", sw=0.5)
+    for a in (1.2, 2.0, 2.9): v.circle(a, -5.25, 0.25, stroke="#8aa07a", sw=0.5)
     v.circle(1.0, -2.55, 0.38, stroke=MID, sw=0.6); chair(v, 1.0, -3.2, 's'); chair(v, 1.0, -1.9, 'n')
     v.rect(2.4, 3.5, -4.95, -4.55, stroke=MID, sw=0.6); plantc(v, -1.0, -4.95, 0.45); plantc(v, -1.2, -0.95, 0.25); plantc(v, 3.25, -0.95, 0.25)
     lbl(v, 2.35, -3.85, "Gård / terrass", "ca 29 m²")
@@ -147,6 +148,7 @@ def plan_ground(el, ox, oy, S):
     for i in range(1, 4): v.line(4.03, 6.83 + 0.18 * i, 5.14, 6.83 + 0.18 * i, stroke=INK, sw=0.5)
     v.text(4.5, 6.2, "veranda", 10, fill=MID)
     # new house
+    ve = v; v = V(el, ox, oy, S, -2.6 - DXN, 8.4)
     new_outer(v, 0)
     wall(v, 'x', 5.45, 8.6, -9.75, -9.65, [(6.6, 7.4, 'door')]); wall(v, 'y', -12.0, -9.75, 5.45, 5.55, [])
     door(v, 1.3, -5.8, 0.8, 0, -90); door(v, 2.9, -5.8, 0.8, 180, -90); door(v, 5.5, -5.8, 0.6, 0, -90); door(v, 6.7, -5.8, 0.6, 180, -90)
@@ -163,11 +165,12 @@ def plan_ground(el, ox, oy, S):
     v.rect(7.95, 8.55, -11.3, -10.7, stroke=MID, sw=0.5); v.circle(8.25, -11.0, 0.2, stroke=MID, sw=0.5); v.circle(6.0, -11.5, 0.3, stroke=MID, sw=0.5)
     lbl(v, 3.0, -7.6, "Vardagsrum", "ca 30 m²"); lbl(v, 6.25, -8.55, "Hall", size=12); lbl(v, 6.9, -10.65, "Tvätt / teknik", "ca 7 m²", size=11)
     # dims and section marker
-    dim(v, NX0, -13.1, NX1, -13.1, "8,6"); dim(v, 9.55, NYA, 9.55, NYB, "6,8", vertical=True)
-    dim(v, 9.55, NYB, 9.55, 0, "5,5", vertical=True); dim(v, 9.55, 0, 9.55, 5.5, "5,5", vertical=True); dim(v, 0, 8.1, 8.9, 8.1, "8,9")
-    for b0, b1 in ((7.75, 6.9), (-12.6, -13.5)): v.line(6.0, b0, 6.0, b1, stroke=CUT, sw=1.6)
+    vn = v; v = ve
+    dim(vn, NX0, -13.1, NX1, -13.1, "8,6"); dim(v, 10.05, NYA, 10.05, NYB, "6,8", vertical=True)
+    dim(v, 10.05, NYB, 10.05, 0, "5,5", vertical=True); dim(v, 10.05, 0, 10.05, 5.5, "5,5", vertical=True); dim(v, 0, 8.1, 8.9, 8.1, "8,9")
+    for b0, b1 in ((7.75, 6.9), (-12.6, -13.5)): v.line(6.3, b0, 6.3, b1, stroke=CUT, sw=1.6)
     for b in (7.75, -13.5):
-        v.poly([(6.0, b), (6.5, b), (6.35, b + 0.12), (6.5, b), (6.35, b - 0.12)], stroke=CUT, sw=1.2, close=False); v.text(5.65, b, "A", 13, weight="bold")
+        v.poly([(6.3, b), (6.8, b), (6.65, b + 0.12), (6.8, b), (6.65, b - 0.12)], stroke=CUT, sw=1.2, close=False); v.text(5.95, b, "A", 13, weight="bold")
     return v
 
 def plan_upper(el, ox, oy, S):
@@ -186,6 +189,7 @@ def plan_upper(el, ox, oy, S):
     v.text(6.2, -1.35, "Glastak ca 15°", 11, fill=GREEN); v.text(6.2, -3.95, "screen / taklucka vid nock", 10, fill=MID)
     v.rect(-1.6, 3.66, -5.48, -0.55, stroke=LIGHT, sw=0.5, dash="3,3")
     # new house upper
+    ve = v; v = V(el, ox, oy, S, -2.6 - DXN, 8.4)
     new_outer(v, 1)
     wall(v, 'y', -12.0, -5.8, 5.35, 5.45, [(-10.2, -9.4, 'door'), (-8.5, -7.7, 'door')]); wall(v, 'x', 0.6, 5.35, -8.95, -8.85, [])
     wall(v, 'x', 5.45, 8.6, -10.45, -10.35, [(6.9, 7.6, 'door')]); wall(v, 'x', 5.45, 6.75, -7.15, -7.05, [(5.65, 6.45, 'door')])
@@ -203,9 +207,10 @@ def plan_upper(el, ox, oy, S):
     for a, b in ((6.15, -6.2), (6.15, -6.6)): v.line(5.5, b, 6.6, b, stroke=LIGHT, sw=0.5)
     lbl(v, 1.5, -10.25, "Sovrum 1", "ca 14,5 m²", size=12); lbl(v, 1.5, -7.55, "Sovrum 2", "ca 14,5 m²", size=12)
     lbl(v, 7.25, -11.3, "Dusch", "ca 5 m²", size=11); lbl(v, 6.1, -8.7, "Hall", size=11); lbl(v, 6.1, -6.35, "Förråd", size=10)
-    for b0, b1 in ((7.75, 6.9), (-12.6, -13.5)): v.line(6.0, b0, 6.0, b1, stroke=CUT, sw=1.6)
+    v = ve
+    for b0, b1 in ((7.75, 6.9), (-12.6, -13.5)): v.line(6.3, b0, 6.3, b1, stroke=CUT, sw=1.6)
     for b in (7.75, -13.5):
-        v.poly([(6.0, b), (6.5, b), (6.35, b + 0.12), (6.5, b), (6.35, b - 0.12)], stroke=CUT, sw=1.2, close=False); v.text(5.65, b, "A", 13, weight="bold")
+        v.poly([(6.3, b), (6.8, b), (6.65, b + 0.12), (6.8, b), (6.65, b - 0.12)], stroke=CUT, sw=1.2, close=False); v.text(5.95, b, "A", 13, weight="bold")
     return v
 
 def site_plan(el, ox, oy, s):
@@ -227,10 +232,10 @@ def site_plan(el, ox, oy, s):
     pg([mo(*p) for p in ((-1.6, -5.48), (3.66, -5.48), (3.66, -0.55), (-1.6, -0.55))], "#f1efea", MID, 0.5)
     pg([mo(*p) for p in ((0, 0), (8.9, 0), (8.9, 5.5), (0, 5.5))], BEIGE, CUT, 1.0)
     pg([mo(*p) for p in ((3.7, -5.5), (8.7, -5.5), (8.7, 0), (3.7, 0))], GLASS, GREEN, 0.8)
-    pg([mo(*p) for p in ((0.3, -12.3), (8.9, -12.3), (8.9, -5.5), (0.3, -5.5))], OCHRE, CUT, 1.0)
+    pg([mo(*p) for p in ((0.3 + DXN, -12.3), (8.9 + DXN, -12.3), (8.9 + DXN, -5.5), (0.3 + DXN, -5.5))], OCHRE, CUT, 1.0)
     # distance new house -> west boundary
     A, E = plot[0], plot[4]; dx, dy = E[0] - A[0], E[1] - A[1]; L = math.hypot(dx, dy); nx, ny = dy / L, -dx / L
-    best = min(((abs((mo(*c)[0] - A[0]) * nx + (mo(*c)[1] - A[1]) * ny) / 13.7, c) for c in ((0.3, -12.3), (0.3, -5.5), (0, 0), (0, 5.5))))
+    best = min(((abs((mo(*c)[0] - A[0]) * nx + (mo(*c)[1] - A[1]) * ny) / 13.7, c) for c in ((0.3 + DXN, -12.3), (0.3 + DXN, -5.5), (0, 0), (0, 5.5))))
     c = mo(*best[1]); f = ((c[0] - A[0]) * dx + (c[1] - A[1]) * dy) / L ** 2; foot = (A[0] + f * dx, A[1] + f * dy)
     el.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="%s" stroke-width="0.8"/>' % (*mp(*c), *mp(*foot), INK))
     mx, my = mp((c[0] + foot[0]) / 2, (c[1] + foot[1]) / 2); T(el, mx - 4, my + 16, "ca %.1f m" % best[0], 10, "end", fill=INK)
@@ -247,7 +252,7 @@ def sheet_frame(el, W_, H_, sheet_title, blad, extra):
     for yy in (y + 52, y + 104, y + 156): el.append('<line x1="%d" y1="%d" x2="%d" y2="%d" stroke="%s" stroke-width="0.6"/>' % (x, yy, x + w, yy, MID))
     el.append('<line x1="%d" y1="%d" x2="%d" y2="%d" stroke="%s" stroke-width="0.6"/>' % (x + 300, y + 104, x + 300, y + h, MID))
     T(el, x + 14, y + 22, "DALSTIGEN 17, RESARÖ – TILLBYGGNAD", 15, "start", "bold", ls=0.6); T(el, x + 14, y + 42, "Fastighet Överby 6:21, Vaxholms kommun", 11, fill=MID)
-    T(el, x + 14, y + 74, sheet_title, 14, "start", "bold"); T(el, x + 14, y + 93, "Alternativ 2 – 5,5 m mellan husen", 11, fill=MID)
+    T(el, x + 14, y + 74, sheet_title, 14, "start", "bold"); T(el, x + 14, y + 93, "Alternativ 2 – 5,5 m mellan husen, nya huset 0,5 m österut", 11, fill=MID)
     T(el, x + 14, y + 126, "SKISSFÖRSLAG – EJ BYGGLOVSHANDLING", 11, "start", "bold", "#8a3b1e"); T(el, x + 14, y + 144, "Alla mått är skissmått i meter", 10, fill=MID)
     T(el, x + 314, y + 126, "Datum 2026-11-24", 10); T(el, x + 314, y + 144, "Blad " + blad, 10)
     T(el, x + 14, y + 178, extra, 10, fill=MID); T(el, x + 314, y + 178, "Skala enl. skalstock", 10, fill=MID)

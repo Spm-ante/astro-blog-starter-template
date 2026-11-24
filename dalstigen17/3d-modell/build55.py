@@ -6,7 +6,7 @@ from mathutils import Vector, Matrix
 MODE, QUAL = sys.argv[-2], sys.argv[-1]
 OUT = "/tmp/claude-0/-home-user-astro-blog-starter-template/917fa675-5d57-5e76-8f36-64970dee47db/scratchpad/render/out"
 SEC, FINAL, XC = MODE == 'sec', QUAL == 'final', 6.0
-GAP = 5.5; DY = -(GAP - 4.0)
+GAP = 5.5; DY = -(GAP - 4.0); DXN = 0.5
 bpy.ops.wm.read_factory_settings(use_empty=True)
 scene = bpy.context.scene
 col = scene.collection
@@ -191,7 +191,7 @@ def H(x, y):
         f = np.clip(1 - np.hypot(x - cx, y - cy) / r, 0, 1); return f * f * (3 - 2 * f)
     hill = 3.0 * bump(19, -1, 7.5) + 2.2 * bump(17, -13, 6.5) + 2.4 * bump(18, 10, 6.5) + 1.5 * bump(-14, 16, 7)
     h = -0.45 - 3.0 * sm(y, 7, 22) + 1.6 * sm(-y, 13, 40) - 0.8 * sm(-x, 4, 30) + hill
-    pad = ((x > 0.25) & (x < 8.95) & (y > -10.85 + DY) & (y < 0.0)) | ((x > 0.0) & (x < 8.9) & (y >= 0.0) & (y < 5.5))
+    pad = ((x > 0.25) & (x < 8.95 + DXN) & (y > -10.85 + DY) & (y < 0.0)) | ((x > 0.0) & (x < 8.9) & (y >= 0.0) & (y < 5.5))
     return np.where(pad, np.minimum(h, -0.64), h), hill
 gx = np.arange(-46, 46.01, 0.75); GX, GY = np.meshgrid(gx, gx, indexing='ij'); GZ, GH = H(GX, GY)
 n = len(gx); idx = np.arange(n * n).reshape(n, n)
@@ -288,7 +288,7 @@ box((5.95, 8.57), (yi0, -8.7), (2.88, 2.895), 'bathtile'); box((8.1, 8.55), (-9.
 box((7.95, 8.55), (-10.3, -9.95), (2.88, 3.3), 'white'); box((6.84, 6.86), (yi0, -9.6), (2.9, 4.9), 'glass', cap='none')
 box((8.555, 8.57), (-9.55, -8.9), (3.95, 4.75), 'pane')
 
-for _o in set(bpy.data.objects) - _pre: _o.data.transform(Matrix.Translation((0, DY, 0)))
+for _o in set(bpy.data.objects) - _pre: _o.data.transform(Matrix.Translation((DXN, DY, 0)))
 # ---------------- winter garden: x 3.7..8.7, y -GAP..0 ----------------
 W = GAP; M = -W / 2; HS = W / 2
 GZ0, GZR = 2.42, 2.42 + HS * T15
@@ -334,9 +334,9 @@ plant(5.1, -W + 0.45, 0, 0.16, 0.26, 0.0, 0.5, 'lavender', 160, 5, 0.04); plant(
 
 # ---------------- courtyard terrace ----------------
 box((-1.6, 3.66), (-W + 0.02, -0.55), (-0.66, -0.15), 'stone'); box((-2.0, -1.6), (-W + 0.4, -0.9), (-0.66, -0.31), 'stone')
-box((-0.02, 3.66), (-0.55, -0.03), (-0.66, -0.2), 'soil'); box((0.3, 3.66), (-W + 0.02, -W + 0.5), (-0.66, -0.2), 'soil')
+box((-0.02, 3.66), (-0.55, -0.03), (-0.66, -0.2), 'soil'); box((0.3 + DXN, 3.66), (-W + 0.02, -W + 0.5), (-0.66, -0.2), 'soil')
 for i, px in enumerate((0.45, 1.25, 2.1, 2.9)): blob(px, -0.3, -0.02, 0.5, 0.35, 600, 0.025, 'lavender' if i % 2 == 0 else 'shrub', 10 + i)
-for i, px in enumerate((0.8, 1.8, 2.8)): blob(px, -W + 0.27, -0.05, 0.6, 0.4, 700, 0.03, 'shrub', 40 + i)
+for i, px in enumerate((1.2, 2.0, 2.9)): blob(px, -W + 0.27, -0.05, 0.6, 0.4, 700, 0.03, 'shrub', 40 + i)
 TX, TY = 1.0, M + 0.2
 cone(TX, TY, -0.15, 0.03, 0.03, 0.7, 'green'); cone(TX, TY, 0.55, 0.38, 0.38, 0.03, 'green')            # cafe table
 for cy in (TY - 0.65, TY + 0.65):
@@ -379,7 +379,7 @@ for i, (k, x, y, h) in enumerate(TREES):
     tree(k, x, y, h, i * 1.3, i % 2)
 if not SEC:
     blob(-1.6, 7.4, 0.3, 2.0, 1.5, 7000, 0.045, 'shrub', 31); blob(-1.6, 7.4, 0.5, 2.0, 1.5, 800, 0.04, 'rhodo', 32)
-    blob(-0.5, -5.6 + DY, -0.2, 0.9, 0.7, 1200, 0.035, 'shrub', 33); blob(-0.5, -9.4 + DY, -0.2, 1.0, 0.8, 1400, 0.035, 'shrub', 34)
+    blob(-0.5 + DXN, -5.6 + DY, -0.2, 0.9, 0.7, 1200, 0.035, 'shrub', 33); blob(-0.5 + DXN, -9.4 + DY, -0.2, 1.0, 0.8, 1400, 0.035, 'shrub', 34)
     blob(10.2, -1.5, -0.1, 1.4, 0.9, 1500, 0.04, 'shrub', 35)
 
 # ---------------- section cut ----------------
@@ -430,6 +430,6 @@ c.caustics_reflective = False; c.caustics_refractive = False; c.sample_clamp_ind
 scene.view_settings.view_transform = 'AgX'; scene.view_settings.look = 'AgX - Medium High Contrast'
 scene.render.resolution_x, scene.render.resolution_y = RX, RY
 scene.render.image_settings.file_format = 'JPEG'; scene.render.image_settings.quality = 92
-scene.render.filepath = f"{OUT}/{MODE}_{QUAL}_gap55.jpg"
+scene.render.filepath = f"{OUT}/{MODE}_{QUAL}_gap55_e05.jpg"
 bpy.ops.render.render(write_still=True)
 print("DONE", scene.render.filepath)
