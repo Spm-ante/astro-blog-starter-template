@@ -86,15 +86,15 @@ def title(el, x, y, t, sub):
 # ---------- shared new-house geometry (alt 2, after shift) ----------
 NX0, NX1, NYA, NYB = 0.3, 8.9, -12.3, -5.5
 DXN = 0.5  # new house moved east relative to the existing house
-def new_outer(v, floor):
+def new_outer(v, floor, three=False):
     if floor == 0:
         wall(v, 'x', NX0, NX1, NYB - 0.3, NYB, [(1.3, 2.9, 'glass'), (5.5, 6.7, 'door')])
         wall(v, 'x', NX0, NX1, NYA, NYA + 0.3, [(1.8, 3.8, 'win'), (7.0, 7.6, 'win')])
         wall(v, 'y', NYA + 0.3, NYB - 0.3, NX0, NX0 + 0.3, [(-11.2, -10.0, 'win'), (-7.8, -6.6, 'win')])
         wall(v, 'y', NYA + 0.3, NYB - 0.3, NX1 - 0.3, NX1, [(-11.4, -10.5, 'win'), (-8.5, -7.5, 'win')])
     else:
-        wall(v, 'x', NX0, NX1, NYB - 0.3, NYB, [(1.55, 2.65, 'win')])
-        wall(v, 'x', NX0, NX1, NYA, NYA + 0.3, [])
+        wall(v, 'x', NX0, NX1, NYB - 0.3, NYB, [(1.55, 2.65, 'win')] + ([(4.3, 5.3, 'win')] if three else []))
+        wall(v, 'x', NX0, NX1, NYA, NYA + 0.3, [(2.0, 3.2, 'win')] if three else [])
         wall(v, 'y', NYA + 0.3, NYB - 0.3, NX0, NX0 + 0.3, [(-11.15, -10.05, 'win'), (-7.75, -6.65, 'win')])
         wall(v, 'y', NYA + 0.3, NYB - 0.3, NX1 - 0.3, NX1, [(-11.05, -10.4, 'win')])
 
@@ -182,7 +182,7 @@ def plan_ground(el, ox, oy, S):
         v.poly([(6.3, b), (6.8, b), (6.65, b + 0.12), (6.8, b), (6.65, b - 0.12)], stroke=CUT, sw=1.2, close=False); v.text(5.95, b, "A", 13, weight="bold")
     return v
 
-def plan_upper(el, ox, oy, S):
+def plan_upper(el, ox, oy, S, three=False):
     v = V(el, ox, oy, S, -2.6, 8.4)
     # existing: roof outline, loft
     v.poly([(-0.55, -0.6), (3.7, -0.6), (3.7, -0.02), (9.45, -0.02), (9.45, 6.1), (-0.55, 6.1)], stroke=MID, sw=0.6, dash="6,3")
@@ -199,23 +199,41 @@ def plan_upper(el, ox, oy, S):
     v.rect(-1.6, 3.66, -5.48, -0.55, stroke=LIGHT, sw=0.5, dash="3,3")
     # new house upper
     ve = v; v = V(el, ox, oy, S, -2.6 - DXN, 8.4)
-    new_outer(v, 1)
-    wall(v, 'y', -12.0, -5.8, 5.35, 5.45, [(-10.2, -9.4, 'door'), (-8.5, -7.7, 'door')]); wall(v, 'x', 0.6, 5.35, -8.95, -8.85, [])
-    wall(v, 'x', 5.45, 8.6, -10.45, -10.35, [(6.9, 7.6, 'door')]); wall(v, 'x', 5.45, 6.75, -7.15, -7.05, [(5.65, 6.45, 'door')])
-    wall(v, 'y', -7.05, -5.8, 6.65, 6.75, [])
-    door(v, 5.35, -10.2, 0.8, 90, 180); door(v, 5.35, -8.5, 0.8, 90, 180); door(v, 6.9, -10.45, 0.7, 0, -90); door(v, 5.65, -7.05, 0.8, 0, 90)
-    v.poly([(6.75, -5.8), (6.75, -6.7), (7.7, -6.7), (7.7, -9.2), (8.6, -9.2), (8.6, -5.8)], stroke=INK, sw=0.6, dash="4,3")
-    for j in range(6, 11): v.line(7.7, -6.7 - 0.25 * j + 0.0, 8.6, -6.7 - 0.25 * j, stroke=LIGHT, sw=0.5)
-    v.line(7.7, -9.2, 7.7, -6.7, sw=1.4); v.line(6.75, -6.7, 7.7, -6.7, sw=1.4)
-    v.line(8.15, -9.0, 8.15, -7.3, stroke=MID, sw=0.6); v.poly([(8.05, -7.5), (8.15, -7.3), (8.25, -7.5)], stroke=MID, sw=0.6, close=False); v.text(8.15, -9.45, "ned", 9, fill=MID)
-    v.text(7.7, -6.25, "trapphål", 9, fill=MID)
-    bed(v, 2.4, 4.0, -12.0, -10.0, 's'); v.rect(4.75, 5.35, -12.0, -10.4, stroke=MID, sw=0.5); v.line(4.75, -12.0, 5.35, -10.4, stroke=MID, sw=0.4)
-    bed(v, 2.4, 4.0, -8.85, -6.85, 'n'); v.rect(4.75, 5.35, -7.4, -5.8, stroke=MID, sw=0.5); v.line(4.75, -7.4, 5.35, -5.8, stroke=MID, sw=0.4)
-    v.rect(5.45, 6.4, -12.0, -11.05, stroke=MID, sw=0.5); v.line(5.45, -12.0, 6.4, -11.05, stroke=MID, sw=0.4); v.line(5.45, -11.05, 6.4, -12.0, stroke=MID, sw=0.4)
-    v.rect(8.0, 8.55, -11.95, -11.6, stroke=MID, sw=0.5); v.circle(8.2, -11.35, 0.2, stroke=MID, sw=0.5); v.rect(7.7, 8.55, -10.95, -10.5, stroke=MID, sw=0.5)
-    for a, b in ((6.15, -6.2), (6.15, -6.6)): v.line(5.5, b, 6.6, b, stroke=LIGHT, sw=0.5)
-    lbl(v, 1.5, -10.25, "Sovrum 1", "ca 14,5 m²", size=12); lbl(v, 1.5, -7.55, "Sovrum 2", "ca 14,5 m²", size=12)
-    lbl(v, 7.25, -11.3, "Dusch", "ca 5 m²", size=11); lbl(v, 6.1, -8.7, "Hall", size=11); lbl(v, 6.1, -6.35, "Förråd", size=10)
+    new_outer(v, 1, three)
+    if three:
+        wall(v, 'x', 0.6, 5.45, -9.5, -9.4, [(3.6, 4.4, 'door')]); wall(v, 'y', -12.0, -9.5, 5.35, 5.45, [])
+        wall(v, 'y', -9.4, -5.8, 2.85, 2.95, [(-9.35, -8.55, 'door')]); wall(v, 'x', 2.95, 6.75, -8.4, -8.3, [(4.4, 5.2, 'door')])
+        wall(v, 'y', -8.3, -5.8, 6.65, 6.75, []); wall(v, 'x', 5.45, 8.6, -10.45, -10.35, [(6.9, 7.6, 'door')])
+        door(v, 3.6, -9.5, 0.8, 0, -90); door(v, 2.85, -9.35, 0.8, 90, 180); door(v, 4.4, -8.3, 0.8, 0, 90); door(v, 6.9, -10.45, 0.7, 0, -90)
+        v.poly([(6.75, -5.8), (6.75, -6.7), (7.7, -6.7), (7.7, -9.2), (8.6, -9.2), (8.6, -5.8)], stroke=INK, sw=0.6, dash="4,3")
+        for j in range(6, 11): v.line(7.7, -6.7 - 0.25 * j, 8.6, -6.7 - 0.25 * j, stroke=LIGHT, sw=0.5)
+        v.line(7.7, -9.2, 7.7, -6.7, sw=1.4); v.line(6.75, -6.7, 7.7, -6.7, sw=1.4)
+        v.line(8.15, -9.0, 8.15, -7.3, stroke=MID, sw=0.6); v.poly([(8.05, -7.5), (8.15, -7.3), (8.25, -7.5)], stroke=MID, sw=0.6, close=False); v.text(8.15, -9.45, "ned", 9, fill=MID)
+        v.rect(0.65, 2.65, -11.55, -9.95, stroke=MID, sw=0.6); v.rect(0.72, 1.12, -11.45, -10.8, stroke=MID, sw=0.5); v.rect(0.72, 1.12, -10.7, -10.05, stroke=MID, sw=0.5)
+        v.rect(4.75, 5.35, -12.0, -9.6, stroke=MID, sw=0.5); v.line(4.75, -12.0, 5.35, -9.6, stroke=MID, sw=0.4)
+        bed(v, 0.65, 1.55, -9.35, -7.35, 's'); v.rect(1.7, 2.8, -6.4, -5.85, stroke=MID, sw=0.5); v.rect(2.25, 2.85, -9.35, -8.6, stroke=MID, sw=0.5)
+        bed(v, 3.0, 3.9, -8.25, -6.25, 's'); v.rect(4.3, 5.5, -6.4, -5.85, stroke=MID, sw=0.5); v.rect(6.05, 6.65, -8.25, -7.05, stroke=MID, sw=0.5); v.line(6.05, -8.25, 6.65, -7.05, stroke=MID, sw=0.4)
+        v.rect(5.45, 6.4, -12.0, -11.05, stroke=MID, sw=0.5); v.line(5.45, -12.0, 6.4, -11.05, stroke=MID, sw=0.4); v.line(5.45, -11.05, 6.4, -12.0, stroke=MID, sw=0.4)
+        v.rect(8.0, 8.55, -11.95, -11.6, stroke=MID, sw=0.5); v.circle(8.2, -11.35, 0.2, stroke=MID, sw=0.5); v.rect(7.7, 8.55, -10.95, -10.5, stroke=MID, sw=0.5)
+        lbl(v, 3.6, -10.75, "Sovrum", "ca 12 m²", size=12); lbl(v, 2.2, -8.0, "Barnrum 1", "ca 8 m²", size=10); lbl(v, 5.1, -6.95, "Barnrum 2", "ca 9 m²", size=11)
+        lbl(v, 7.25, -11.3, "Dusch", "ca 5 m²", size=11); lbl(v, 6.5, -9.4, "Hall", size=10)
+    else:
+        wall(v, 'y', -12.0, -5.8, 5.35, 5.45, [(-10.2, -9.4, 'door'), (-8.5, -7.7, 'door')]); wall(v, 'x', 0.6, 5.35, -8.95, -8.85, [])
+        wall(v, 'x', 5.45, 8.6, -10.45, -10.35, [(6.9, 7.6, 'door')]); wall(v, 'x', 5.45, 6.75, -7.15, -7.05, [(5.65, 6.45, 'door')])
+        wall(v, 'y', -7.05, -5.8, 6.65, 6.75, [])
+        door(v, 5.35, -10.2, 0.8, 90, 180); door(v, 5.35, -8.5, 0.8, 90, 180); door(v, 6.9, -10.45, 0.7, 0, -90); door(v, 5.65, -7.05, 0.8, 0, 90)
+        v.poly([(6.75, -5.8), (6.75, -6.7), (7.7, -6.7), (7.7, -9.2), (8.6, -9.2), (8.6, -5.8)], stroke=INK, sw=0.6, dash="4,3")
+        for j in range(6, 11): v.line(7.7, -6.7 - 0.25 * j + 0.0, 8.6, -6.7 - 0.25 * j, stroke=LIGHT, sw=0.5)
+        v.line(7.7, -9.2, 7.7, -6.7, sw=1.4); v.line(6.75, -6.7, 7.7, -6.7, sw=1.4)
+        v.line(8.15, -9.0, 8.15, -7.3, stroke=MID, sw=0.6); v.poly([(8.05, -7.5), (8.15, -7.3), (8.25, -7.5)], stroke=MID, sw=0.6, close=False); v.text(8.15, -9.45, "ned", 9, fill=MID)
+        v.text(7.7, -6.25, "trapphål", 9, fill=MID)
+        bed(v, 2.4, 4.0, -12.0, -10.0, 's'); v.rect(4.75, 5.35, -12.0, -10.4, stroke=MID, sw=0.5); v.line(4.75, -12.0, 5.35, -10.4, stroke=MID, sw=0.4)
+        bed(v, 2.4, 4.0, -8.85, -6.85, 'n'); v.rect(4.75, 5.35, -7.4, -5.8, stroke=MID, sw=0.5); v.line(4.75, -7.4, 5.35, -5.8, stroke=MID, sw=0.4)
+        v.rect(5.45, 6.4, -12.0, -11.05, stroke=MID, sw=0.5); v.line(5.45, -12.0, 6.4, -11.05, stroke=MID, sw=0.4); v.line(5.45, -11.05, 6.4, -12.0, stroke=MID, sw=0.4)
+        v.rect(8.0, 8.55, -11.95, -11.6, stroke=MID, sw=0.5); v.circle(8.2, -11.35, 0.2, stroke=MID, sw=0.5); v.rect(7.7, 8.55, -10.95, -10.5, stroke=MID, sw=0.5)
+        for a, b in ((6.15, -6.2), (6.15, -6.6)): v.line(5.5, b, 6.6, b, stroke=LIGHT, sw=0.5)
+        lbl(v, 1.5, -10.25, "Sovrum 1", "ca 14,5 m²", size=12); lbl(v, 1.5, -7.55, "Sovrum 2", "ca 14,5 m²", size=12)
+        lbl(v, 7.25, -11.3, "Dusch", "ca 5 m²", size=11); lbl(v, 6.1, -8.7, "Hall", size=11); lbl(v, 6.1, -6.35, "Förråd", size=10)
     v = ve
     for b0, b1 in ((7.75, 6.9), (-12.6, -13.5)): v.line(6.3, b0, 6.3, b1, stroke=CUT, sw=1.6)
     for b in (7.75, -13.5):
@@ -447,3 +465,23 @@ for l_ in ("Ny huskropp: ytterväggar ca 300 mm, stående träpanel i dämpad oc
     T(el, nx, yy, l_, 11); yy += 16
 open(OUT + "/ritning-sektion-fasad.svg", "w").write(svg(el, SW, SH))
 print("ok")
+
+# ================= SHEET 1B: upper floor, three bedrooms =================
+el = []; SW3 = 1120
+sheet_frame(el, SW3, SH, "Övervåning – variant 3 sovrum", "1B", "Variant till blad 1, entréplan oförändrad")
+plan_upper(el, 40, 44, 42, three=True); title(el, 48, 1000, "ÖVERVÅNING – VARIANT 3 SOVRUM", "Föräldrasovrum och två barnrum")
+scalebar(el, 48, 1040, 42); north(el, 540, 80, 29.5)
+tx, ty = 620, 90
+T(el, tx, ty, "RUMSFÖRDELNING (skiss)", 13, "start", "bold", ls=0.5)
+for i, (k, val) in enumerate((("Sovrum, föräldrar", "ca 12 m²"), ("Barnrum 1", "ca 8 m²"), ("Barnrum 2", "ca 9 m²"), ("Dusch", "ca 5 m²"), ("Hall och korridor", "ca 7 m²"))):
+    T(el, tx, ty + 26 + i * 19, k, 12); T(el, tx + 300, ty + 26 + i * 19, val, 12, "end")
+ty2 = ty + 140
+T(el, tx, ty2, "JÄMFÖRT MED BLAD 1", 13, "start", "bold", ls=0.5)
+for i, l_ in enumerate(("Föräldrasovrummet minskar från ca 14,5 till ca 12 m².",
+                        "Barnrummen får var sitt fönster och egen dörr.",
+                        "Förrådet utgår, garderober i rummen i stället.",
+                        "Nytt fönster mot gården (barnrum 2) och mot",
+                        "söder (föräldrasovrum).", "Entréplan och trappa är oförändrade.")):
+    T(el, tx, ty2 + 24 + i * 18, l_, 12)
+open(OUT + "/ritning-overvaning-3-sovrum.svg", "w").write(svg(el, SW3, SH))
+print("sheet 1B")
