@@ -211,7 +211,7 @@ def plan_upper(el, ox, oy, S, three=False):
         v.line(8.15, -9.0, 8.15, -7.3, stroke=MID, sw=0.6); v.poly([(8.05, -7.5), (8.15, -7.3), (8.25, -7.5)], stroke=MID, sw=0.6, close=False); v.text(8.15, -9.45, "ned", 9, fill=MID)
         v.rect(0.65, 2.65, -11.55, -9.95, stroke=MID, sw=0.6); v.rect(0.72, 1.12, -11.45, -10.8, stroke=MID, sw=0.5); v.rect(0.72, 1.12, -10.7, -10.05, stroke=MID, sw=0.5)
         v.rect(4.75, 5.35, -12.0, -9.6, stroke=MID, sw=0.5); v.line(4.75, -12.0, 5.35, -9.6, stroke=MID, sw=0.4)
-        bed(v, 0.65, 1.55, -9.35, -7.35, 's'); v.rect(1.7, 2.8, -6.4, -5.85, stroke=MID, sw=0.5); v.rect(2.25, 2.85, -9.35, -8.6, stroke=MID, sw=0.5)
+        bed(v, 0.65, 1.55, -9.35, -7.35, 's'); v.rect(1.7, 2.8, -6.4, -5.85, stroke=MID, sw=0.5); v.rect(2.25, 2.85, -8.4, -7.2, stroke=MID, sw=0.5); v.rect(0.6, 2.85, -9.4, -7.7, stroke=MID, sw=0.7, dash="6,3"); v.rect(1.65, 2.04, -7.68, -7.6, stroke=INK, sw=0.6)
         bed(v, 3.0, 3.9, -8.25, -6.25, 's'); v.rect(4.3, 5.5, -6.4, -5.85, stroke=MID, sw=0.5); v.rect(6.05, 6.65, -8.25, -7.05, stroke=MID, sw=0.5); v.line(6.05, -8.25, 6.65, -7.05, stroke=MID, sw=0.4)
         v.rect(5.45, 6.4, -12.0, -11.05, stroke=MID, sw=0.5); v.line(5.45, -12.0, 6.4, -11.05, stroke=MID, sw=0.4); v.line(5.45, -11.05, 6.4, -12.0, stroke=MID, sw=0.4)
         v.rect(8.0, 8.55, -11.95, -11.6, stroke=MID, sw=0.5); v.circle(8.2, -11.35, 0.2, stroke=MID, sw=0.5); v.rect(7.7, 8.55, -10.95, -10.5, stroke=MID, sw=0.5)
@@ -481,7 +481,22 @@ for i, l_ in enumerate(("Föräldrasovrummet minskar från ca 14,5 till ca 12 m�
                         "Barnrummen får var sitt fönster och egen dörr.",
                         "Förrådet utgår, garderober i rummen i stället.",
                         "Nytt fönster mot gården (barnrum 2) och mot",
-                        "söder (föräldrasovrum).", "Entréplan och trappa är oförändrade.")):
+                        "söder (föräldrasovrum).", "Entréplan och trappa är oförändrade.",
+                        "Tak öppet till nock i sovrum och korridor,", "kallvind över hall och dusch.",
+                        "Barnrum 1: sovhems ovanför sängen (streckad).")):
     T(el, tx, ty2 + 24 + i * 18, l_, 12)
 open(OUT + "/ritning-overvaning-3-sovrum.svg", "w").write(svg(el, SW3, SH))
 print("sheet 1B")
+
+# ================= keyplans for the interior views =================
+KV = {"kok": ((3.35, 2.35), (8.73, 2.9), 0, False), "vinter": ((5.5, -4.95), (8.4, -0.3), 0, False), "vardag": ((6.9, -7.05), (1.1, -9.7), 0, False),
+      "sovrum": ((4.6, -9.75), (1.1, -11.5), 1, True), "barn1": ((3.15, -6.55), (1.3, -9.0), 1, True), "barn2": ((5.3, -8.1), (4.3, -5.8), 1, True)}
+for name, (c, t, floor, portrait) in KV.items():
+    el = ['<rect x="0" y="0" width="300" height="470" fill="#ffffff"/>']
+    vv = plan_ground(el, 6, 8, 20) if floor == 0 else plan_upper(el, 6, 8, 20, three=True)
+    ang = math.atan2(t[1] - c[1], t[0] - c[0]); half = math.atan(12 / 24) if portrait else math.atan(18 / 24); L = 2.8
+    pts = [c, (c[0] + L * math.cos(ang + half), c[1] + L * math.sin(ang + half)), (c[0] + L * math.cos(ang - half), c[1] + L * math.sin(ang - half))]
+    el.append('<polygon points="%s" fill="#d9532c" fill-opacity="0.3" stroke="#d9532c" stroke-width="1.4"/>' % " ".join("%.1f,%.1f" % vv.P(a, b) for a, b in pts))
+    x, y = vv.P(*c); el.append('<circle cx="%.1f" cy="%.1f" r="5.5" fill="#d9532c" stroke="#ffffff" stroke-width="1.5"/>' % (x, y))
+    open(OUT + "/keyplan-%s.svg" % name, "w").write(svg(el, 300, 470))
+print("keyplans")

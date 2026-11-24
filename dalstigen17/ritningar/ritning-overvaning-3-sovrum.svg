@@ -129,7 +129,9 @@
 <polygon points="197.5,789.5 235.3,789.5 235.3,705.5 197.5,705.5" fill="none" stroke="#6f6f6f" stroke-width="0.6" stroke-linejoin="round"/>
 <polygon points="201.7,786.1 231.1,786.1 231.1,770.6 201.7,770.6" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
 <polygon points="241.6,665.6 287.8,665.6 287.8,642.5 241.6,642.5" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
-<polygon points="264.7,789.5 289.9,789.5 289.9,758.0 264.7,758.0" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="264.7,749.6 289.9,749.6 289.9,699.2 264.7,699.2" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
+<polygon points="195.4,791.6 289.9,791.6 289.9,720.2 195.4,720.2" fill="none" stroke="#6f6f6f" stroke-width="0.7" stroke-dasharray="6,3" stroke-linejoin="round"/>
+<polygon points="239.5,719.4 255.9,719.4 255.9,716.0 239.5,716.0" fill="none" stroke="#2a2a2a" stroke-width="0.6" stroke-linejoin="round"/>
 <polygon points="296.2,743.3 334.0,743.3 334.0,659.3 296.2,659.3" fill="none" stroke="#6f6f6f" stroke-width="0.6" stroke-linejoin="round"/>
 <polygon points="300.4,739.9 329.8,739.9 329.8,724.4 300.4,724.4" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
 <polygon points="350.8,665.6 401.2,665.6 401.2,642.5 350.8,642.5" fill="none" stroke="#6f6f6f" stroke-width="0.5" stroke-linejoin="round"/>
@@ -189,4 +191,7 @@
 <text x="620.0" y="308.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#2a2a2a" text-anchor="start">Nytt fönster mot gården (barnrum 2) och mot</text>
 <text x="620.0" y="326.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#2a2a2a" text-anchor="start">söder (föräldrasovrum).</text>
 <text x="620.0" y="344.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#2a2a2a" text-anchor="start">Entréplan och trappa är oförändrade.</text>
+<text x="620.0" y="362.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#2a2a2a" text-anchor="start">Tak öppet till nock i sovrum och korridor,</text>
+<text x="620.0" y="380.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#2a2a2a" text-anchor="start">kallvind över hall och dusch.</text>
+<text x="620.0" y="398.0" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" fill="#2a2a2a" text-anchor="start">Barnrum 1: sovhems ovanför sängen (streckad).</text>
 </svg>
