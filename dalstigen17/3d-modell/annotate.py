@@ -31,6 +31,8 @@ DIMS = {
            ((1.12, -9.38, FL2 + 0.02), (1.12, -5.82, FL2 + 0.02), "3,6 m")],
  "barn2": [((3.47, -5.84, FL2 + 0.02), (7.15, -5.84, FL2 + 0.02), "3,7 m"), ((3.47, -5.82, FL2), (3.47, -5.82, FL2 + 2.41), "2,4 m"),
            ((4.8, -5.86, FL2 + 0.76), (6.0, -5.86, FL2 + 0.76), "Skrivbord 1,2 m")],
+ "gard": [((3.66, -0.02, 0.1), (3.66, -5.48, 0.1), "5,5 m mellan husen", 0.3), ((3.7, -2.75, 0.05), (3.7, -2.75, 3.157), "3,2 m i nock"),
+          ((3.7, -0.06, 0.05), (3.7, -0.06, 2.42), "2,4 m")],
 }
 img = Image.open(check if check else ai).convert("RGB"); IW, IH = img.size
 def to_img(p):
@@ -40,13 +42,14 @@ def to_img(p):
     return (u * IW / W, v * IH / H)
 d = ImageDraw.Draw(img); sc = IW / 1200
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", int(22 * sc))
-for a, b, lab in DIMS[room]:
+for a, b, lab, *opt in DIMS[room]:
+    f = opt[0] if opt else 0.5  # label position along the line
     A, B = to_img(a), to_img(b); L = math.hypot(B[0] - A[0], B[1] - A[1]) or 1
     nx, ny = -(B[1] - A[1]) / L, (B[0] - A[0]) / L; t = 10 * sc
     for w_, col in ((int(7 * sc), (20, 30, 26)), (int(3 * sc), (255, 255, 255))):
         d.line([A, B], fill=col, width=w_)
         for P in (A, B): d.line([(P[0] - nx * t, P[1] - ny * t), (P[0] + nx * t, P[1] + ny * t)], fill=col, width=w_)
-    mx, my = (A[0] + B[0]) / 2, (A[1] + B[1]) / 2; bb = d.textbbox((0, 0), lab, font=font); tw, th = bb[2] - bb[0], bb[3] - bb[1]
+    mx, my = A[0] + f * (B[0] - A[0]), A[1] + f * (B[1] - A[1]); bb = d.textbbox((0, 0), lab, font=font); tw, th = bb[2] - bb[0], bb[3] - bb[1]
     pad = 8 * sc; d.rounded_rectangle([mx - tw / 2 - pad, my - th / 2 - pad, mx + tw / 2 + pad, my + th / 2 + pad * 1.2], radius=6 * sc, fill=(31, 58, 44))
     d.text((mx - tw / 2, my - th / 2 - bb[1] + pad * 0.1), lab, font=font, fill=(255, 255, 255))
 img.save(out, quality=90); print("saved", out, img.size)

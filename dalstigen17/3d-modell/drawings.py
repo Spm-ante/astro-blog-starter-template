@@ -490,7 +490,7 @@ print("sheet 1B")
 
 # ================= keyplans for the interior views =================
 KV = {"kok": ((3.35, 2.35), (8.73, 2.9), 0, False), "vinter": ((5.5, -4.95), (8.4, -0.3), 0, False), "vardag": ((6.9, -7.05), (1.1, -9.7), 0, False),
-      "sovrum": ((4.6, -9.75), (1.1, -11.5), 1, True), "barn1": ((3.15, -6.55), (1.3, -9.0), 1, True), "barn2": ((5.3, -8.1), (4.3, -5.8), 1, True)}
+      "sovrum": ((4.6, -9.75), (1.1, -11.5), 1, True), "barn1": ((3.15, -6.55), (1.3, -9.0), 1, True), "barn2": ((5.3, -8.1), (4.3, -5.8), 1, True), "gard": ((-1.4, -2.75), (8.0, -2.9), 0, False)}
 for name, (c, t, floor, portrait) in KV.items():
     el = ['<rect x="0" y="0" width="300" height="470" fill="#ffffff"/>']
     vv = plan_ground(el, 6, 8, 20) if floor == 0 else plan_upper(el, 6, 8, 20, three=True)

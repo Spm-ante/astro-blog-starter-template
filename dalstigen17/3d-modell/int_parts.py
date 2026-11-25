@@ -138,7 +138,8 @@ for (x, y, z, sx, sy, p) in ((6.6, 2.9, 2.22, 2.4, 1.6, 90), (3.3, -9.0, 2.42, 3
     o = bpy.data.objects.new('a', L); col.objects.link(o); o.location = (x, y, z)
 VIEWS = {'kok': ((3.35, 2.35, 1.6), (8.73, 2.9), 0.0, False), 'vinter': ((5.5, -4.95, 1.6), (8.4, -0.3), 0.12, False),
          'vardag': ((6.9, -7.05, 1.6), (1.1, -9.7), 0.0, False), 'sovrum': ((4.6, -9.75, FL2 + 1.6), (1.1, -11.5), 0.05, True),
-         'barn1': ((3.15, -6.55, FL2 + 1.6), (1.3, -9.0), 0.05, True), 'barn2': ((5.3, -8.1, FL2 + 1.6), (4.3, -5.8), 0.05, True)}
+         'barn1': ((3.15, -6.55, FL2 + 1.6), (1.3, -9.0), 0.05, True), 'barn2': ((5.3, -8.1, FL2 + 1.6), (4.3, -5.8), 0.05, True),
+         'gard': ((-1.4, -2.75, 1.45), (8.0, -2.9), 0.1, False)}
 cam = bpy.data.objects.new('cam', bpy.data.cameras.new('cam')); col.objects.link(cam); scene.camera = cam
 cam.data.lens = 24; cam.data.sensor_fit = 'HORIZONTAL'; cam.data.sensor_width = 36; cam.data.clip_start = 0.05; cam.data.clip_end = 300
 scene.render.engine = 'CYCLES'; c = scene.cycles; c.device = 'CPU'
