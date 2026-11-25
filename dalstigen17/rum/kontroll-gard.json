@@ -1,21 +1,22 @@
 [
  {
-  "file": "v1.png",
+  "file": "gar1.png",
   "size": [
    2528,
    1696
   ],
   "aspect_err_pct": 0.63,
-  "raw_p90_pct": 2.16,
-  "fit_scale": 0.967,
+  "raw_p90_pct": 2.03,
+  "fit_scale": 0.966,
   "fit_shift_px": [
-   11.0,
-   -2.0
+   10.0,
+   -3.0
   ],
-  "stretch_pct": 0.41,
-  "resid_median_pct": 0.27,
-  "resid_p90_pct": 2.01,
+  "stretch_pct": 0.0,
+  "resid_median_pct": 0.24,
+  "resid_p90_pct": 1.94,
   "lines_pts": 2267,
-  "score_pct": 2.01
+  "score_pct": 1.94,
+  "rattelse": true
  }
 ]
