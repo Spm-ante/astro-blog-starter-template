@@ -1,0 +1,21 @@
+[
+ {
+  "file": "dusch2.png",
+  "size": [
+   2528,
+   1696
+  ],
+  "aspect_err_pct": 0.63,
+  "raw_p90_pct": 3.33,
+  "fit_scale": 0.953,
+  "fit_shift_px": [
+   -12.5,
+   -13.0
+  ],
+  "stretch_pct": 0.42,
+  "resid_median_pct": 0.4,
+  "resid_p90_pct": 3.33,
+  "lines_pts": 512,
+  "score_pct": 3.33
+ }
+]

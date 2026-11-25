@@ -490,13 +490,23 @@ print("sheet 1B")
 
 # ================= keyplans for the interior views =================
 KV = {"kok": ((3.35, 2.35), (8.73, 2.9), 0, False), "vinter": ((5.5, -4.95), (8.4, -0.3), 0, False), "vardag": ((6.9, -7.05), (1.1, -9.7), 0, False),
-      "sovrum": ((4.6, -9.75), (1.1, -11.5), 1, True), "barn1": ((3.15, -6.55), (1.3, -9.0), 1, True), "barn2": ((5.3, -8.1), (4.3, -5.8), 1, True), "gard": ((-1.4, -2.75), (8.0, -2.9), 0, False)}
+      "sovrum": ((4.6, -9.75), (1.1, -11.5), 1, True), "barn1": ((3.15, -6.55), (1.3, -9.0), 1, True), "barn2": ((5.3, -8.1), (4.3, -5.8), 1, True), "gard": ((-1.4, -2.75), (8.0, -2.9), 0, False),
+      "hall": ((6.25, -9.4), (8.4, -6.4), 0, False), "dusch": ((6.1, -10.6), (9.1, -11.9), 1, False),
+      "entre": ((6.0, 12.0), (4.5, 5.5), 0, False), "soder": ((-3.0, -20.0), (5.0, -11.5), 0, False)}
 for name, (c, t, floor, portrait) in KV.items():
     el = ['<rect x="0" y="0" width="300" height="470" fill="#ffffff"/>']
     vv = plan_ground(el, 6, 8, 20) if floor == 0 else plan_upper(el, 6, 8, 20, three=True)
-    ang = math.atan2(t[1] - c[1], t[0] - c[0]); half = math.atan(12 / 24) if portrait else math.atan(18 / 24); L = 2.8
+    far = None; x, y = vv.P(*c)
+    if not (10 <= x <= 290 and 10 <= y <= 460):          # camera outside the sheet: pull the marker in to the edge
+        c0 = c; k = 0.0
+        while not (10 <= x <= 290 and 10 <= y <= 460) and k < 1: k += 0.01; c = (c0[0] + k * (t[0] - c0[0]), c0[1] + k * (t[1] - c0[1])); x, y = vv.P(*c)
+        far = math.hypot(c[0] - c0[0], c[1] - c0[1])
+    ang = math.atan2(t[1] - c[1], t[0] - c[0]); half = math.atan(12 / 24) if portrait else math.atan(18 / 24); L = 1.9 if name == 'dusch' else 2.8
     pts = [c, (c[0] + L * math.cos(ang + half), c[1] + L * math.sin(ang + half)), (c[0] + L * math.cos(ang - half), c[1] + L * math.sin(ang - half))]
     el.append('<polygon points="%s" fill="#d9532c" fill-opacity="0.3" stroke="#d9532c" stroke-width="1.4"/>' % " ".join("%.1f,%.1f" % vv.P(a, b) for a, b in pts))
     x, y = vv.P(*c); el.append('<circle cx="%.1f" cy="%.1f" r="5.5" fill="#d9532c" stroke="#ffffff" stroke-width="1.5"/>' % (x, y))
+    if far:
+        right = x < 150; tx_, ty_ = (x + 10, y + 4) if right else (x - 10, y + 4)
+        el.append('<text x="%.1f" y="%.1f" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#8A3B1E" text-anchor="%s" stroke="#ffffff" stroke-width="3" paint-order="stroke">kamera ca %.0f m längre bort</text>' % (tx_, ty_, "start" if right else "end", far))
     open(OUT + "/keyplan-%s.svg" % name, "w").write(svg(el, 300, 470))
 print("keyplans")

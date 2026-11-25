@@ -39,6 +39,24 @@ box((8.33, 8.718), (0.35, 2.4), (0, 0.85), 'oak')
 for ax in (3.25, 4.25): box((ax, ax + 0.7), (0.5, 1.2), (0.1, 0.42), 'sofa'); box((ax, ax + 0.7), (0.5, 0.65), (0.42, 0.85), 'sofa')
 cone(4.1, 1.75, 0, 0.03, 0.03, 0.5, 'oak'); cone(4.1, 1.75, 0.5, 0.28, 0.28, 0.03, 'oak'); box((2.98, 4.0), (4.73, 5.318), (0, 2.1), 'white')
 
+# entrance veranda on the north side (existing house, simplified after sheet 1)
+box((3.09, 5.91), (5.5, 6.83), (-0.45, -0.05), 'pine')
+for i in range(4): box((4.03, 5.14), (6.83 + 0.18 * i, 6.83 + 0.18 * (i + 1)), (-0.45, -0.13 - 0.08 * i), 'pine')
+for px in (3.14, 5.86): box((px - 0.05, px + 0.05), (6.70, 6.80), (-0.05, 2.3), 'white')
+for sx in (3.14, 5.86):
+    box((sx - 0.03, sx + 0.03), (5.5, 6.8), (0.86, 0.92), 'white')
+    for k in range(10): yb = 5.6 + 0.11 * k; box((sx - 0.015, sx + 0.015), (yb, yb + 0.03), (-0.05, 0.86), 'white')
+for xa, xb in ((3.14, 4.03), (5.14, 5.86)):
+    box((xa, xb), (6.74, 6.8), (0.86, 0.92), 'white')
+    for k in range(1, int((xb - xa) / 0.11)): xx = xa + 0.11 * k; box((xx - 0.015, xx + 0.015), (6.755, 6.785), (-0.05, 0.86), 'white')
+VE, VR, VX0, VX1, VXM = 2.3, 2.3 + 1.55 * math.tan(math.radians(35)), 2.95, 6.05, 4.5
+def slab(pts, t, m):
+    v = [tuple(q) for q in pts] + [(q[0], q[1], q[2] - t) for q in pts]
+    return obj('s', v, [(0, 1, 2, 3), (7, 6, 5, 4), (0, 4, 5, 1), (1, 5, 6, 2), (2, 6, 7, 3), (3, 7, 4, 0)], m)
+slab([(VX0, 5.0, VE), (VX0, 6.95, VE), (VXM, 6.95, VR), (VXM, 5.0, VR)], 0.08, 'tile_old')
+slab([(VXM, 5.0, VR), (VXM, 6.95, VR), (VX1, 6.95, VE), (VX1, 5.0, VE)], 0.08, 'tile_old')
+obj('g', [(VX0 + 0.12, 6.9, VE - 0.03), (VX1 - 0.12, 6.9, VE - 0.03), (VXM, 6.9, VR - 0.1)], [(0, 1, 2)], 'white')
+box((VX0 + 0.05, VX1 - 0.05), (6.68, 6.82), (2.12, 2.3), 'white')
 ##== NEWHOUSE
 # ---------------- new house, alternative 2 with sheet 1B upper floor (absolute coords) ----------------
 NX0, NX1, NYA, NYB = 0.8, 9.4, -12.3, -5.5; IX0, IX1, IYA, IYB = 1.1, 9.1, -12.0, -5.8; RY = -8.9; FL2 = 2.88
@@ -123,6 +141,13 @@ box((5.25, 5.85), (IYA, -9.6), (FL2, FL2 + 2.2), 'white')
 box((1.15, 2.05), (-9.35, -7.35), (FL2, FL2 + 0.45), 'fabric'); desk(2.2, 3.3, -6.4, -5.82); box((2.75, 3.35), (-8.4, -7.2), (FL2, FL2 + 2.1), 'white')
 box((3.5, 4.4), (-8.25, -6.25), (FL2, FL2 + 0.45), 'fabric'); desk(4.8, 6.0, -6.4, -5.82); box((6.55, 7.15), (-8.25, -7.05), (FL2, FL2 + 2.1), 'white')
 
+# shower room fixtures (sheet 1B): shower west, WC south-east, basin north-east
+box((5.95, 6.9), (IYA, -11.05), (FL2, FL2 + 0.03), 'bathtile'); box((5.95, 6.9), (IYA, IYA + 0.01), (FL2, FL2 + 2.1), 'bathtile'); box((5.95, 5.96), (IYA, -11.05), (FL2, FL2 + 2.1), 'bathtile')
+box((6.89, 6.91), (IYA, -11.25), (FL2 + 0.03, FL2 + 2.0), 'glass'); box((6.88, 6.92), (IYA, -11.25), (FL2 + 2.0, FL2 + 2.03), 'zinc')
+box((6.38, 6.42), (-11.99, -11.96), (FL2 + 1.0, FL2 + 1.97), 'zinc'); cone(6.4, -11.82, FL2 + 1.95, 0.12, 0.12, 0.02, 'zinc')
+box((8.5, 9.05), (IYA, -11.82), (FL2 + 0.35, FL2 + 1.05), 'white'); box((8.52, 8.9), (-11.82, -11.25), (FL2, FL2 + 0.42), 'white')
+box((8.2, 9.05), (-10.95, -10.5), (FL2 + 0.45, FL2 + 0.85), 'oak'); box((8.35, 8.9), (-10.85, -10.55), (FL2 + 0.85, FL2 + 0.97), 'white')
+box((8.25, 9.0), (-10.465, -10.45), (FL2 + 1.1, FL2 + 1.9), 'zinc')
 ##== RENDER
 # ---------------- interior lighting, cameras, render ----------------
 import json
@@ -133,13 +158,17 @@ bg = nt.nodes['Background']; nt.links.new(sky.outputs[0], bg.inputs[0]); bg.inpu
 sd = Vector((-0.8, -0.25, 0.5)).normalized()
 sun = bpy.data.objects.new('sun', bpy.data.lights.new('sun', 'SUN')); col.objects.link(sun)
 sun.data.energy = 3.2; sun.data.color = (1.0, 0.93, 0.84); sun.data.angle = math.radians(3); sun.rotation_euler = (-sd).to_track_quat('-Z', 'Y').to_euler()
-for (x, y, z, sx, sy, p) in ((6.6, 2.9, 2.22, 2.4, 1.6, 90), (3.3, -9.0, 2.42, 3.0, 2.4, 120), (3.4, -10.75, 5.8, 3.0, 1.6, 60), (2.2, -6.8, 5.2, 1.4, 1.4, 40), (5.3, -7.0, 5.4, 2.0, 1.4, 50), (6.2, -2.75, 2.6, 3.0, 3.0, 160)):
+for (x, y, z, sx, sy, p) in ((6.6, 2.9, 2.22, 2.4, 1.6, 90), (3.3, -9.0, 2.42, 3.0, 2.4, 120), (3.4, -10.75, 5.8, 3.0, 1.6, 60), (2.2, -6.8, 5.2, 1.4, 1.4, 40), (5.3, -7.0, 5.4, 2.0, 1.4, 50), (6.2, -2.75, 2.6, 3.0, 3.0, 160), (7.6, -8.0, 2.45, 2.0, 2.0, 60), (7.5, -11.2, 5.22, 2.4, 1.2, 40)):
     L = bpy.data.lights.new('a', 'AREA'); L.shape = 'RECTANGLE'; L.size = sx; L.size_y = sy; L.energy = p; L.color = (1.0, 0.96, 0.9)
     o = bpy.data.objects.new('a', L); col.objects.link(o); o.location = (x, y, z)
 VIEWS = {'kok': ((3.35, 2.35, 1.6), (8.73, 2.9), 0.0, False), 'vinter': ((5.5, -4.95, 1.6), (8.4, -0.3), 0.12, False),
          'vardag': ((6.9, -7.05, 1.6), (1.1, -9.7), 0.0, False), 'sovrum': ((4.6, -9.75, FL2 + 1.6), (1.1, -11.5), 0.05, True),
          'barn1': ((3.15, -6.55, FL2 + 1.6), (1.3, -9.0), 0.05, True), 'barn2': ((5.3, -8.1, FL2 + 1.6), (4.3, -5.8), 0.05, True),
-         'gard': ((-1.4, -2.75, 1.45), (8.0, -2.9), 0.1, False)}
+         'gard': ((-1.4, -2.75, 1.45), (8.0, -2.9), 0.1, False),
+         'hall': ((6.25, -9.4, 1.6), (8.4, -6.4), 0.1, False), 'dusch': ((6.1, -10.6, FL2 + 1.6), (9.1, -11.9), 0.0, False),
+         'entre': ((6.0, 12.0, float(H(6.0, 12.0)[0]) + 1.6), (4.5, 5.5), 0.18, False),
+         'soder': ((-3.0, -20.0, float(H(-3.0, -20.0)[0]) + 1.6), (5.0, -11.5), 0.12, False)}
+OUTDOOR = {'entre', 'soder'}
 cam = bpy.data.objects.new('cam', bpy.data.cameras.new('cam')); col.objects.link(cam); scene.camera = cam
 cam.data.lens = 24; cam.data.sensor_fit = 'HORIZONTAL'; cam.data.sensor_width = 36; cam.data.clip_start = 0.05; cam.data.clip_end = 300
 scene.render.engine = 'CYCLES'; c = scene.cycles; c.device = 'CPU'
@@ -172,7 +201,7 @@ for n in MODE.split(','):
         if o.type == 'MESH' and not o.get('nocut') is None: pass
         if o.type == 'MESH' and o.name.startswith(('blob', 'c')) and len(o.data.vertices) > 0:
             cen = sum((Vector(vv.co) for vv in o.data.vertices[:200]), Vector()) / min(len(o.data.vertices), 200)
-            o.hide_render = o.name.startswith('blob') or (Vector((cen.x - cx, cen.y - cy)).length < 1.4 and abs(cen.z - cz) < 2.5)
+            o.hide_render = (o.name.startswith('blob') and n not in OUTDOOR) or (Vector((cen.x - cx, cen.y - cy)).length < 1.4 and abs(cen.z - cz) < 2.5)
     scene.render.filepath = f"{OUT}/int_{n}_{QUAL}.jpg"; bpy.ops.render.render(write_still=True); print("DONE", n)
     info[n] = {"loc": [cx, cy, cz], "target": [tx, ty], "yaw": cam.rotation_euler[2], "lens": 24, "sensor": 36, "portrait": portrait, "shift_y": sh, "res": [scene.render.resolution_x, scene.render.resolution_y]}
 json.dump(info, open(f"{OUT}/int_views_{QUAL}.json", "w"), indent=1)

@@ -1,0 +1,21 @@
+[
+ {
+  "file": "entre4.png",
+  "size": [
+   2528,
+   1696
+  ],
+  "aspect_err_pct": 0.63,
+  "raw_p90_pct": 2.98,
+  "fit_scale": 1.074,
+  "fit_shift_px": [
+   46.5,
+   -12.0
+  ],
+  "stretch_pct": 4.67,
+  "resid_median_pct": 0.24,
+  "resid_p90_pct": 1.79,
+  "lines_pts": 4662,
+  "score_pct": 4.67
+ }
+]
