@@ -1,21 +1,22 @@
 [
  {
-  "file": "dusch2.png",
+  "file": "dusch1.png",
   "size": [
    2528,
    1696
   ],
   "aspect_err_pct": 0.63,
-  "raw_p90_pct": 3.33,
-  "fit_scale": 0.953,
+  "raw_p90_pct": 2.62,
+  "fit_scale": 0.976,
   "fit_shift_px": [
-   -12.5,
-   -13.0
+   -11.0,
+   -11.5
   ],
-  "stretch_pct": 0.42,
-  "resid_median_pct": 0.4,
-  "resid_p90_pct": 3.33,
+  "stretch_pct": 0.0,
+  "resid_median_pct": 0.24,
+  "resid_p90_pct": 1.59,
   "lines_pts": 512,
-  "score_pct": 3.33
+  "score_pct": 1.59,
+  "stil": "modern allmoge"
  }
 ]

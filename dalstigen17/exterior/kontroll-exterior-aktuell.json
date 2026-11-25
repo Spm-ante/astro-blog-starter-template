@@ -1,21 +1,22 @@
 [
  {
-  "file": "v4.png",
+  "file": "ext3.png",
   "size": [
    2752,
    1536
   ],
   "aspect_err_pct": 0.02,
-  "raw_p90_pct": 0.61,
-  "fit_scale": 1.012,
+  "raw_p90_pct": 1.05,
+  "fit_scale": 1.02,
   "fit_shift_px": [
-   6.0,
-   -1.0
+   20.0,
+   -3.0
   ],
-  "stretch_pct": 0.2,
-  "resid_median_pct": 0.08,
-  "resid_p90_pct": 0.59,
-  "lines_pts": 1200,
-  "score_pct": 0.59
+  "stretch_pct": 0.0,
+  "resid_median_pct": 0.05,
+  "resid_p90_pct": 0.66,
+  "lines_pts": 1110,
+  "score_pct": 0.66,
+  "stil": "modern allmoge"
  }
 ]

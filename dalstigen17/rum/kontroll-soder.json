@@ -1,21 +1,22 @@
 [
  {
-  "file": "soder4.png",
+  "file": "soder3.png",
   "size": [
    2528,
    1696
   ],
   "aspect_err_pct": 0.63,
-  "raw_p90_pct": 1.1,
-  "fit_scale": 1.007,
+  "raw_p90_pct": 1.13,
+  "fit_scale": 1.0,
   "fit_shift_px": [
    0.5,
-   1.5
+   0.5
   ],
-  "stretch_pct": 0.0,
-  "resid_median_pct": 0.08,
-  "resid_p90_pct": 1.09,
-  "lines_pts": 1342,
-  "score_pct": 1.09
+  "stretch_pct": 0.6,
+  "resid_median_pct": 0.16,
+  "resid_p90_pct": 1.11,
+  "lines_pts": 1451,
+  "score_pct": 1.11,
+  "stil": "modern allmoge"
  }
 ]

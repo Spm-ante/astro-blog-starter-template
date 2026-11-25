@@ -1,78 +1,22 @@
 [
  {
-  "file": "v1.png",
+  "file": "barn13.png",
   "size": [
    1696,
    2528
   ],
   "aspect_err_pct": 0.63,
-  "raw_p90_pct": 5.0,
-  "fit_scale": 1.003,
+  "raw_p90_pct": 3.58,
+  "fit_scale": 1.0,
   "fit_shift_px": [
    0.0,
    -2.0
   ],
-  "stretch_pct": 0.2,
-  "resid_median_pct": 0.84,
-  "resid_p90_pct": 5.0,
+  "stretch_pct": 0.4,
+  "resid_median_pct": 0.12,
+  "resid_p90_pct": 3.58,
   "lines_pts": 1370,
-  "score_pct": 5.0
- },
- {
-  "file": "v2.png",
-  "size": [
-   1696,
-   2528
-  ],
-  "aspect_err_pct": 0.63,
-  "raw_p90_pct": 5.0,
-  "fit_scale": 1.0,
-  "fit_shift_px": [
-   0.5,
-   0.0
-  ],
-  "stretch_pct": 0.2,
-  "resid_median_pct": 0.95,
-  "resid_p90_pct": 5.0,
-  "lines_pts": 1370,
-  "score_pct": 5.0
- },
- {
-  "file": "v3.png",
-  "size": [
-   1696,
-   2528
-  ],
-  "aspect_err_pct": 0.63,
-  "raw_p90_pct": 5.0,
-  "fit_scale": 0.909,
-  "fit_shift_px": [
-   -15.0,
-   31.5
-  ],
-  "stretch_pct": 9.65,
-  "resid_median_pct": 1.42,
-  "resid_p90_pct": 5.0,
-  "lines_pts": 1370,
-  "score_pct": 9.65
- },
- {
-  "file": "v4.png",
-  "size": [
-   1696,
-   2528
-  ],
-  "aspect_err_pct": 0.63,
-  "raw_p90_pct": 5.0,
-  "fit_scale": 0.82,
-  "fit_shift_px": [
-   -8.0,
-   12.0
-  ],
-  "stretch_pct": 1.49,
-  "resid_median_pct": 1.09,
-  "resid_p90_pct": 5.0,
-  "lines_pts": 1370,
-  "score_pct": 5.0
+  "score_pct": 3.58,
+  "stil": "modern allmoge"
  }
 ]

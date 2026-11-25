@@ -1,6 +1,6 @@
 [
  {
-  "file": "vin4.png",
+  "file": "vinter1.png",
   "size": [
    2528,
    1696
@@ -12,11 +12,11 @@
    2.0,
    0.5
   ],
-  "stretch_pct": 0.2,
-  "resid_median_pct": 0.16,
-  "resid_p90_pct": 1.27,
-  "lines_pts": 2465,
-  "score_pct": 1.27,
-  "rattelse": true
+  "stretch_pct": 0.4,
+  "resid_median_pct": 0.19,
+  "resid_p90_pct": 1.29,
+  "lines_pts": 2676,
+  "score_pct": 1.29,
+  "stil": "modern allmoge"
  }
 ]

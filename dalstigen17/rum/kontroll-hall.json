@@ -1,21 +1,22 @@
 [
  {
-  "file": "hall1.png",
+  "file": "hall2.png",
   "size": [
    2528,
    1696
   ],
   "aspect_err_pct": 0.63,
-  "raw_p90_pct": 1.81,
-  "fit_scale": 1.003,
+  "raw_p90_pct": 2.84,
+  "fit_scale": 0.995,
   "fit_shift_px": [
-   0.0,
-   0.5
+   -3.0,
+   1.5
   ],
-  "stretch_pct": 0.6,
-  "resid_median_pct": 0.08,
-  "resid_p90_pct": 1.82,
-  "lines_pts": 1445,
-  "score_pct": 1.82
+  "stretch_pct": 0.4,
+  "resid_median_pct": 0.32,
+  "resid_p90_pct": 2.55,
+  "lines_pts": 1309,
+  "score_pct": 2.55,
+  "stil": "modern allmoge"
  }
 ]

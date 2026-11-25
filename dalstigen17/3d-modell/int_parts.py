@@ -107,6 +107,7 @@ box((IX0, IX1), (IYA, IYB), (-0.015, 0), 'oak'); box((IX0, IX1), (IYA, IYB), (-0
 for xa, xb, yb_ in ((IX0, 7.25, IYB), (7.25, 8.2, -6.7), (8.2, IX1, -9.2)):
     box((xa, xb), (IYA, yb_), (2.5, FL2 - 0.015), 'wint'); box((xa, xb), (IYA, yb_), (FL2 - 0.015, FL2), 'oak')
 box((5.95, IX1), (IYA, -8.4), (5.28, 5.33), 'wint'); box((7.25, IX1), (-8.4, IYB), (5.28, 5.33), 'wint'); ext(prof(-9.5, -8.4, 5.28), 5.85, 5.95, 'wint')
+box((5.95, IX1), (-9.65, IYB), (0.0, 0.006), 'terracotta')   # style A: terracotta tiles in the hall
 # ground floor: laundry, stair, living room
 owall('x', 5.95, IX1, (-9.75, -9.65), 0, 2.5, 'wint', [(7.1, 7.9, 0, 2.05)]); box((5.95, 6.05), (IYA, -9.75), (0, 2.5), 'wint')
 for i in range(1, 5):

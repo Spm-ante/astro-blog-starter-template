@@ -1,78 +1,22 @@
 [
  {
-  "file": "v1.png",
+  "file": "sovrum2.png",
   "size": [
    1696,
    2528
   ],
   "aspect_err_pct": 0.63,
   "raw_p90_pct": 5.0,
-  "fit_scale": 0.97,
-  "fit_shift_px": [
-   4.0,
-   13.0
-  ],
-  "stretch_pct": 0.41,
-  "resid_median_pct": 1.31,
-  "resid_p90_pct": 5.0,
-  "lines_pts": 1259,
-  "score_pct": 5.0
- },
- {
-  "file": "v2.png",
-  "size": [
-   1696,
-   2528
-  ],
-  "aspect_err_pct": 0.63,
-  "raw_p90_pct": 5.0,
-  "fit_scale": 0.974,
-  "fit_shift_px": [
-   4.0,
-   -10.0
-  ],
-  "stretch_pct": 0.83,
-  "resid_median_pct": 0.48,
-  "resid_p90_pct": 5.0,
-  "lines_pts": 1259,
-  "score_pct": 5.0
- },
- {
-  "file": "v3.png",
-  "size": [
-   1696,
-   2528
-  ],
-  "aspect_err_pct": 0.63,
-  "raw_p90_pct": 5.0,
-  "fit_scale": 1.0,
-  "fit_shift_px": [
-   0.5,
-   0.5
-  ],
-  "stretch_pct": 0.0,
-  "resid_median_pct": 0.24,
-  "resid_p90_pct": 5.0,
-  "lines_pts": 1259,
-  "score_pct": 5.0
- },
- {
-  "file": "v4.png",
-  "size": [
-   1696,
-   2528
-  ],
-  "aspect_err_pct": 0.63,
-  "raw_p90_pct": 5.0,
-  "fit_scale": 1.0,
+  "fit_scale": 1.003,
   "fit_shift_px": [
    0.0,
-   0.5
+   1.5
   ],
-  "stretch_pct": 2.67,
-  "resid_median_pct": 0.95,
+  "stretch_pct": 5.47,
+  "resid_median_pct": 1.42,
   "resid_p90_pct": 5.0,
   "lines_pts": 1259,
-  "score_pct": 5.0
+  "score_pct": 5.47,
+  "stil": "modern allmoge"
  }
 ]
