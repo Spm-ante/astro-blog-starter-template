@@ -149,8 +149,20 @@ c.max_bounces = 8; c.diffuse_bounces = 4; c.glossy_bounces = 3; c.transmission_b
 c.caustics_reflective = False; c.caustics_refractive = False; c.sample_clamp_indirect = 8
 scene.view_settings.view_transform = 'AgX'; scene.view_settings.look = 'AgX - Medium High Contrast'; scene.view_settings.exposure = 0.9
 scene.render.image_settings.file_format = 'JPEG'; scene.render.image_settings.quality = 92
+# exterior overview: same camera as build55 'ext' (lens 36, tilted), 16:9 to match the image model's 2K frame
+EXT = {'ext': ((-22.0, 1.2, 5.6), (3.7, -2.57 + DY / 2, 3.1), 36)}
 info = {}
 for n in MODE.split(','):
+    if n in EXT:
+        (cx, cy, cz), tgt, lens = EXT[n]
+        cam.data.lens = lens; cam.data.sensor_fit = 'HORIZONTAL'; cam.data.sensor_width = 36; cam.data.shift_x = cam.data.shift_y = 0.0
+        scene.render.resolution_x, scene.render.resolution_y = (1792, 1000) if FINAL else (448, 250)
+        cam.location = (cx, cy, cz); cam.rotation_euler = (Vector(tgt) - cam.location).to_track_quat('-Z', 'Y').to_euler()
+        for o in scene.objects:
+            if o.type == 'MESH' and o.name.startswith(('blob', 'c')): o.hide_render = False
+        scene.render.filepath = f"{OUT}/int_{n}_{QUAL}.jpg"; bpy.ops.render.render(write_still=True); print("DONE", n)
+        info[n] = {"loc": [cx, cy, cz], "target": list(tgt), "lens": lens, "sensor": 36, "res": [scene.render.resolution_x, scene.render.resolution_y]}
+        cam.data.lens = 24; continue
     (cx, cy, cz), (tx, ty), sh, portrait = VIEWS[n]
     cam.data.sensor_fit = 'VERTICAL' if portrait else 'HORIZONTAL'; cam.data.sensor_width = 36; cam.data.sensor_height = 36
     scene.render.resolution_x, scene.render.resolution_y = ((800, 1200) if portrait else (1200, 800)) if FINAL else ((300, 450) if portrait else (450, 300))
