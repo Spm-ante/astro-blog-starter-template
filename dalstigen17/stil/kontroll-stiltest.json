@@ -1,0 +1,59 @@
+[
+ {
+  "file": "A.png",
+  "size": [
+   2528,
+   1696
+  ],
+  "aspect_err_pct": 0.63,
+  "raw_p90_pct": 2.4,
+  "fit_scale": 0.981,
+  "fit_shift_px": [
+   0.0,
+   5.0
+  ],
+  "stretch_pct": 1.23,
+  "resid_median_pct": 0.4,
+  "resid_p90_pct": 2.43,
+  "lines_pts": 1001,
+  "score_pct": 2.43
+ },
+ {
+  "file": "B.png",
+  "size": [
+   2528,
+   1696
+  ],
+  "aspect_err_pct": 0.63,
+  "raw_p90_pct": 1.83,
+  "fit_scale": 1.006,
+  "fit_shift_px": [
+   0.5,
+   0.0
+  ],
+  "stretch_pct": 0.0,
+  "resid_median_pct": 0.16,
+  "resid_p90_pct": 1.94,
+  "lines_pts": 1001,
+  "score_pct": 1.94
+ },
+ {
+  "file": "C.png",
+  "size": [
+   2528,
+   1696
+  ],
+  "aspect_err_pct": 0.63,
+  "raw_p90_pct": 2.06,
+  "fit_scale": 0.995,
+  "fit_shift_px": [
+   4.0,
+   10.5
+  ],
+  "stretch_pct": 0.4,
+  "resid_median_pct": 0.27,
+  "resid_p90_pct": 2.06,
+  "lines_pts": 1001,
+  "score_pct": 2.06
+ }
+]

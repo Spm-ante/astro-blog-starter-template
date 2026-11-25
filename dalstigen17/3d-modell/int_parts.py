@@ -1,4 +1,20 @@
 ##== PRE
+# roofs: tiles only on the top face; fascia and soffit painted (no thick red "lip" at the eaves)
+pbr('soffit', (236, 232, 222), 0.6)
+def twotone(ob, top=(2,), m2='soffit'):
+    ob.data.materials.append(MAT[m2])
+    for p in ob.data.polygons: p.material_index = 0 if p.index in top else 1
+    return ob
+def roof(ya, yb, zw, tan, t, x0, x1, m, os=0.5, on=0.5, side='both', fascia=None, **props):
+    yc = (ya + yb) / 2; zr = zw + (yc - ya) * tan; tv = t * math.sqrt(1 + tan * tan); tile = m.startswith('tile')
+    def mk(ye, o, sg):
+        e = ye + sg * o; ze = zw - o * tan
+        prof = [(e, ze), (yc, zr), (yc, zr - tv), (ye, ze - fascia), (e, ze - fascia)] if (fascia and tile) else [(e, ze), (yc, zr), (yc, zr - tv), (e, ze - tv)]
+        ob = ext(prof, x0, x1, m, **props)
+        return twotone(ob) if tile else ob
+    if side in ('both', 's'): mk(ya, os, -1)
+    if side in ('both', 'n'): mk(yb, on, 1)
+    return zr, tv
 def owall(axis, a, b, t, z0, z1, m, ops=()):
     """Wall with real openings; ops = (u0, u1, za, zb), stacked openings allowed."""
     cuts = sorted(set([a, b] + [min(max(o[0], a), b) for o in ops] + [min(max(o[1], a), b) for o in ops]))
@@ -52,7 +68,7 @@ for xa, xb in ((3.14, 4.03), (5.14, 5.86)):
 VE, VR, VX0, VX1, VXM = 2.3, 2.3 + 1.55 * math.tan(math.radians(35)), 2.95, 6.05, 4.5
 def slab(pts, t, m):
     v = [tuple(q) for q in pts] + [(q[0], q[1], q[2] - t) for q in pts]
-    return obj('s', v, [(0, 1, 2, 3), (7, 6, 5, 4), (0, 4, 5, 1), (1, 5, 6, 2), (2, 6, 7, 3), (3, 7, 4, 0)], m)
+    return twotone(obj('s', v, [(0, 1, 2, 3), (7, 6, 5, 4), (0, 4, 5, 1), (1, 5, 6, 2), (2, 6, 7, 3), (3, 7, 4, 0)], m), top=(0,))
 slab([(VX0, 5.0, VE), (VX0, 6.95, VE), (VXM, 6.95, VR), (VXM, 5.0, VR)], 0.08, 'tile_old')
 slab([(VXM, 5.0, VR), (VXM, 6.95, VR), (VX1, 6.95, VE), (VX1, 5.0, VE)], 0.08, 'tile_old')
 obj('g', [(VX0 + 0.12, 6.9, VE - 0.03), (VX1 - 0.12, 6.9, VE - 0.03), (VXM, 6.9, VR - 0.1)], [(0, 1, 2)], 'white')
@@ -75,7 +91,7 @@ owall('x', IX0, IX1, (IYB - 0.012, IYB), 0, 5.3, 'wint', OPN); owall('x', IX0, I
 owall('y', IYA, IYB, (IX0, IX0 + 0.012), 0, 5.3, 'wint', OPW); owall('y', IYA, IYB, (IX1 - 0.012, IX1), 0, 5.3, 'wint', OPE)
 for xa in (NX0, NX1 - 0.3): ext([(NYA, 5.25), (NYB, 5.25), (RY, 5.25 + 3.4 * T32)], xa, xa + 0.3, 'ochre')
 ext([(IYA, 5.25), (IYB, 5.25), (IYB, ru(IYB)), (RY, ru(RY)), (IYA, ru(IYA))], IX0, IX0 + 0.012, 'wint')
-roof(NYA, NYB, 5.63, T32, 0.45, NX0 - 0.4, NX1 + 0.4, 'tile_new', os=0.45, on=0.45)
+roof(NYA, NYB, 5.63, T32, 0.45, NX0 - 0.4, NX1 + 0.4, 'tile_new', os=0.45, on=0.45, fascia=0.22)
 for xa in (NX0 - 0.44, NX1 + 0.4): roof(NYA, NYB, 5.66, T32, 0.49, xa, xa + 0.04, 'trim', os=0.47, on=0.47)
 for yg in (NYB + 0.45, NYA - 0.55): box((NX0 - 0.4, NX1 + 0.4), (yg, yg + 0.1), (5.25, 5.34), 'zinc')
 for s_ in (-1, 1): ext([(RY, ru(RY) - 0.004), (RY + s_ * 3.1, ru(RY + s_ * 3.1) - 0.004), (RY + s_ * 3.1, ru(RY + s_ * 3.1) - 0.016), (RY, ru(RY) - 0.016)], IX0, 7.25, 'wint')
